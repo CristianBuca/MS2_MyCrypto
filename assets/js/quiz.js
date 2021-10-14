@@ -120,3 +120,6 @@ $('#quiz-answers').on('click', 'button', checkAnswer);
 
 // Listens for click on Show Results button and calls showResults function
 $('#quiz-results').on('click', showResults);
+
+// Listens for click on Try Again button and reloads the page
+$('#quiz-restart').on('click', () => {location.reload()});
