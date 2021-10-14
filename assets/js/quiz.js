@@ -1,10 +1,11 @@
 // Global Variables
 
 // Quiz control buttons into global variables
-var quizStart = $('#quiz-start');
-var quizNext = $('#quiz-next');
-var quizResults = $('#quiz-results');
-var quizRestart = $('#quiz-restart');
+const quizStart = $('#quiz-start');
+const quizNext = $('#quiz-next');
+const quizResults = $('#quiz-results');
+const quizRestart = $('#quiz-restart');
+
 
 // Functions
 
