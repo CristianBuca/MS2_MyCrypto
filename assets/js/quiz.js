@@ -28,6 +28,12 @@ function displayQuestion() {
   quizIndex ++;
 }
 
+/** 
+ * Function to check if selected answer is correct
+ * Checks if text on the clicked button matches the text in the question object with the "correct" key
+ * Validates the answer by changing the button's appearance
+ * If correct, an extra paragraph is appended with validation text from the question object with "validation" key
+ */
 
 function checkAnswer() {
   if (this.innerText == questions[quizIndex -1 ].correct) {
@@ -60,3 +66,4 @@ quizNext.on('click', function() {
     quizIndex = 0;
   }
 });
+
