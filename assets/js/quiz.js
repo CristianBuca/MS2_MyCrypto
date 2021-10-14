@@ -73,7 +73,15 @@ function timer() {
 }
 
 function showResults() {
-  
+  clearInterval(interval);
+  $('#quiz-question').text('Well done! You finished the quiz');
+  $('#quiz-answers').html(`
+  <p class="results"> Your completion time was ${elapsedTime / 1000}<sub>seconds</sub>
+  </br>
+  <p class="results"> Your total score is ${quizScore}`);
+  $('#timer, #score').text('');
+  $('#quiz-results').addClass('hide');
+  $('#quiz-restart').removeClass('hide');
 }
 
 // Event Listeners
