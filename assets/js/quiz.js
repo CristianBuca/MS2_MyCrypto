@@ -5,7 +5,9 @@ const quizStart = $('#quiz-start');
 const quizNext = $('#quiz-next');
 const quizResults = $('#quiz-results');
 const quizRestart = $('#quiz-restart');
+
 var quizIndex = 0;
+var quizScore = 0;
 
 // Functions
 
@@ -39,9 +41,12 @@ function checkAnswer() {
   if (this.innerText == questions[quizIndex -1 ].correct) {
     $(this).addClass('correct');
     $(this).parent().append(`<p id="valid">${questions[quizIndex - 1].validation}</p>`);
+    quizScore ++;
   } else {
     $(this).addClass('wrong');
+    quizScore --;
   }
+  $('#score').text(`Score: ${quizScore}`);
 }
 
 // Event Listeners
