@@ -51,6 +51,12 @@ function checkAnswer() {
   $('#score').text(`Score: ${quizScore}`);
 }
 
+/**
+ * Function to keep track and display elapsed time since the start of the quiz
+ * On a 10ms interval it calculates the difference between the current date and the date the function was called.
+ * parseInt is used to display minutes and seconds as whole numbers
+ * Conditions are use to check when each division reaches the next time unit and modulo operation assures they reset to 0
+ */
 function timer() {
   var startTime = Date.now();
   interval = setInterval(function() {
@@ -64,6 +70,7 @@ function timer() {
     $('#timer').text(`Elapsed time: ${mins} - ${secs} - ${millisecs}`);
   }, 10)
 }
+
 
 // Event Listeners
 
