@@ -67,3 +67,5 @@ quizNext.on('click', function() {
   }
 });
 
+// Listens for clicks on the answer buttons
+$('.answer').click(checkAnswer);
