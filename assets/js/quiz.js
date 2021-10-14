@@ -49,6 +49,13 @@ function checkAnswer() {
   $('#score').text(`Score: ${quizScore}`);
 }
 
+function timer() {
+  var timeStart = Date.now();
+  interval = setInterval(function() {
+    
+  })
+}
+
 // Event Listeners
 
 // Listens for the Start Game button click and displays first question
