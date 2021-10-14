@@ -10,13 +10,13 @@ var quizIndex = 0;
 // Functions
 
 /**
-Function to display next question which will be used by event listeners for Start Game and Next Question buttons
-- Clear previous data from quiz card
-- Add question text to the "quiz-question" div
-- Take answers for current question from the questions.choices array and assign them to a new array
-- Iterate the array, create dynamic buttons for each choice using template literals and append them to the "quiz-answers" div
-- Increment quizIndex for next question
- */
+* Function to display next question which will be used by event listeners for Start Game and Next Question buttons
+* Clear previous data from quiz card
+* Add question text to the "quiz-question" div
+* Take answers for current question from the questions.choices array and assign them to a new array
+* Iterate the array, create dynamic buttons for each choice using template literals and append them to the "quiz-answers" div
+* Increment quizIndex for next question
+*/
 
 function displayQuestion() {
   $('#quiz-answers').text('');
@@ -28,10 +28,19 @@ function displayQuestion() {
   quizIndex ++;
 }
 
+
+function checkAnswer() {
+  if (this.innerText == questions[quizIndex -1].correct) {
+
+
+  }
+}
+
 // Event Listeners
 
 // Listens for the Start Game button click and displays first question
 // Hides the Start Game Button and shows the Next Question Button
+
 quizStart.on('click', function() {
   displayQuestion();
   quizStart.addClass('hide');
