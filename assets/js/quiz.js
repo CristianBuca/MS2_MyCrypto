@@ -89,6 +89,8 @@ quizNext.on('click', function() {
   }
 });
 
-// Listens for clicks on the answer buttons
+// Listens for clicks on the answer buttons and calls checkAnswer function
 $('#quiz-answers').on('click', 'button', checkAnswer);
 
+// Listens for click on Show Results button and calls showResults function
+$('#quiz-results').on('click', showResults);
