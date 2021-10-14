@@ -29,10 +29,21 @@ function displayQuestion() {
 
 // Event Listeners
 
-// Listens to when the Start Game button is pressed and displays first question
+// Listens for the Start Game button click and displays first question
 quizStart.on('click', function() {
   displayQuestion();
 // Hides the Start Game Button and shows the Next Question Button
   quizStart.addClass('hide');
   quizNext.removeClass('hide');
+});
+
+// Listens for the Next Question button click and based on the current questionIndex
+// displays the next question if available or reveals the show Show Results button to end game
+quizNext.on('click', function() {
+  if (quizIndex < questions.length) displayQuestion();
+  else {
+    quizNext.addClass('hide');
+    quizResults.removeClass('hide');
+    quizIndex = 0;
+  }
 });
