@@ -8,6 +8,13 @@ var quizRestart = $('#quiz-restart');
 
 // Functions
 
+// Function to display next question will be used by event listeners 
+// for Start Game and Next Question buttons
+function displayQuestion() {
+// Clear previous data from quiz card
+  $('#quiz-question').text('');
+  $('#quiz-answers').text('');
+}
 
 // Event Listeners
 
