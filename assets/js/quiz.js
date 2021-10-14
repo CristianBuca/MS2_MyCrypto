@@ -23,7 +23,7 @@ function displayQuestion() {
   $('#quiz-question').text(questions[quizIndex].question);
   let answers = questions[quizIndex].choices;
   answers.forEach(choice => {
-    $(`<button class="answer active">${choice}</button>`).appendTo('#quiz-answers');
+    $(`<button class="answer">${choice}</button>`).appendTo('#quiz-answers');
   });
   quizIndex ++;
 }
@@ -68,4 +68,4 @@ quizNext.on('click', function() {
 });
 
 // Listens for clicks on the answer buttons
-$('.answer').click(checkAnswer);
+$('#quiz-answers').on('click', 'button', checkAnswer);
