@@ -8,6 +8,8 @@ const quizRestart = $('#quiz-restart');
 
 var quizIndex = 0;
 var quizScore = 0;
+var interval;
+var elapsedTime;
 
 // Functions
 
@@ -50,10 +52,17 @@ function checkAnswer() {
 }
 
 function timer() {
-  var timeStart = Date.now();
+  var startTime = Date.now();
   interval = setInterval(function() {
-    
-  })
+    elapsedTime = Date.now() - startTime;
+    var mins = parseInt(elapsedTime / 1000 / 60);
+    if (mins >= 60) mins %= 60;
+    var secs = parseInt(elapsedTime / 1000);
+    if (secs >= 60) secs %= 60;
+    var millisecs = elapsedTime;
+    if (millisecs >= 1000) millisecs %= 1000;
+    $('#timer').text(`Elapsed time: ${mins} - ${secs} - ${millisecs}`);
+  }, 10)
 }
 
 // Event Listeners
@@ -65,6 +74,7 @@ quizStart.on('click', function() {
   displayQuestion();
   quizStart.addClass('hide');
   quizNext.removeClass('hide');
+  timer();
 });
 
 // Listens for the Next Question button click and based on the current questionIndex
@@ -81,3 +91,4 @@ quizNext.on('click', function() {
 
 // Listens for clicks on the answer buttons
 $('#quiz-answers').on('click', 'button', checkAnswer);
+
