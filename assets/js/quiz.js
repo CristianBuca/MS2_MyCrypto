@@ -30,9 +30,11 @@ function displayQuestion() {
 
 
 function checkAnswer() {
-  if (this.innerText == questions[quizIndex -1].correct) {
-
-
+  if (this.innerText == questions[quizIndex -1 ].correct) {
+    $(this).addClass('correct');
+    $(this).parent().append(`<p id="valid">${questions[quizIndex - 1].validation}</p>`);
+  } else {
+    $(this).addClass('wrong');
   }
 }
 
