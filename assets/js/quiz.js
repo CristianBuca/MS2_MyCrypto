@@ -57,6 +57,7 @@ function checkAnswer() {
  * parseInt is used to display minutes and seconds as whole numbers
  * Conditions are use to check when each division reaches the next time unit and modulo operation assures they reset to 0
  */
+
 function timer() {
   var startTime = Date.now();
   interval = setInterval(function() {
@@ -71,6 +72,9 @@ function timer() {
   }, 10)
 }
 
+function showResults() {
+  
+}
 
 // Event Listeners
 
