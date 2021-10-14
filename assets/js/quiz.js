@@ -72,6 +72,13 @@ function timer() {
   }, 10)
 }
 
+/**
+ * Function to show results screen once the user went through all the questions
+ * Stops the timer
+ * Clears the last question data from the screen and displays the completion time and final score
+ * Hides the Show Results button and displays the Try Again button
+ */
+
 function showResults() {
   clearInterval(interval);
   $('#quiz-question').text('Well done! You finished the quiz');
