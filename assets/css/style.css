@@ -1,36 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen:wght@700&family=Ubuntu&display=swap');
 
-/* Quiz style */
+/* Quiz styles */
 
 .quiz-area {
+  background-color: #d3d3d3;
+  margin-top: 1rem;
   border-radius: 10px;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
 }
 
 #quiz-title {
+  background-color: #fafafa;
+  margin-bottom: 0.5rem;
   font-family: 'Ubuntu';
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
 }
 
 #quiz-image {
-  background-image: url("quiz-start.jpg");
+  background-image: url("/assets/img/quiz-start.jpg");
+  border-radius: 5px;
   background-position: center center;
   background-size: cover;
   height: 35vh;
-}
-
-#quiz-footer {
-  height: 20vh;
 }
 
 #quiz-card {
   height: 35vh;
 }
 
+#quiz-question {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: 'Oxygen';
+}
+
+#quiz-answers {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: 'Fira Sans';
+}
+
+#quiz-footer {
+  background-color: #fafafa;
+  margin: .5rem;
+  height: 10vh;
+  border-radius: 10px;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .25);
+}
+
 section {
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 .hide {
@@ -55,4 +76,20 @@ section {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); /* for IE 9 */
   -webkit-transform: translate(-50%, -50%); /* for Safari */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 767px) {
+  #quiz-card {
+    height: 70vh;
+  }
+
+  #quiz-title {
+    font-size: 1rem;
+  }
+  #quiz-footer {
+    height: 10vh;
+    font-size: 0.75rem;
+  }
 }
