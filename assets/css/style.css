@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen:wght@700&family=Ubuntu&display=swap');
 
+
+/* body {
+  background-color:rgb(63, 63, 63);
+} */
+
+
+
 /* Quiz styles */
 
 .quiz-area {
-  background-color: #d3d3d3;
   margin-top: 1rem;
   border-radius: 10px;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
 }
 
 #quiz-title {
-  background-color: #fafafa;
   margin-bottom: 0.5rem;
   font-family: 'Ubuntu';
   font-size: 1.5rem;
@@ -40,10 +45,38 @@
   margin-top: .5rem;
   margin-bottom: .5rem;
   font-family: 'Fira Sans';
+  text-align: center;
+}
+
+.quiz-btn {
+  color: inherit;
+  background-color:inherit;
+  text-align: center;
+  width: 90%;
+  margin: 0.25rem 5%;
+  padding: .5rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
+  cursor: pointer;
+  transition: all 150ms;
+  font-size: 1rem;
+  font-weight: 600;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.quiz-btn:hover {
+  box-shadow: rgba(0, 0 ,0, .35) 0 -.5rem .5rem inset, rgba(0, 0, 0, .35) 0 .25rem .25rem;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.quiz-btn:focus {
+  outline: none;
 }
 
 #quiz-footer {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   margin: .5rem;
   height: 10vh;
   border-radius: 10px;
@@ -59,16 +92,17 @@ section {
 }
 
 .correct {
-  background-color: green;
+  background-color: rgb(20, 150, 5, 0.800);
+  box-shadow: 0 .5rem .5rem rgb(20, 150, 5);
 }
 
 .wrong {
-  background-color: red;
+  background-color: rgba(200, 30, 5, 0.800);
+  box-shadow: 0 .5rem .5rem rgb(200, 30, 5);
 }
 
 /* Class used to center elements vertically and horizontally */
 /* Credit https://stackoverflow.com/a/16299904 */
-
 .centered {
   position: absolute;
   left: 50%;
@@ -79,7 +113,7 @@ section {
 }
 
 /* Media Queries */
-
+/* For anything smaller than an ipad the #quiz-image is hidden through Bootstrap and #quiz-card takes the extra space */
 @media screen and (max-width: 767px) {
   #quiz-card {
     height: 70vh;
@@ -93,3 +127,4 @@ section {
     font-size: 0.75rem;
   }
 }
+
