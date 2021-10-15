@@ -18,7 +18,15 @@
   background-image: url("quiz-start.jpg");
   background-position: center center;
   background-size: cover;
-  height: 30vh;
+  height: 35vh;
+}
+
+#quiz-footer {
+  height: 20vh;
+}
+
+#quiz-card {
+  height: 35vh;
 }
 
 section {
@@ -35,4 +43,16 @@ section {
 
 .wrong {
   background-color: red;
+}
+
+/* Class used to center elements vertically and horizontally */
+/* Credit https://stackoverflow.com/a/16299904 */
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* for IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* for Safari */
 }
