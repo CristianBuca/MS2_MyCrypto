@@ -2,7 +2,8 @@
 
 
 /* body {
-  background-color:rgb(63, 63, 63);
+  background-color:rgb(94, 93, 93);
+  color: white;
 } */
 
 
@@ -19,6 +20,7 @@
   font-family: 'Ubuntu';
   font-size: 1.5rem;
   border-radius: 10px;
+  padding: 0 1rem;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
 }
 
@@ -26,9 +28,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: .8rem;
+  right: 1rem;
   font-size: 1.5rem;
-  height: 100%;
-  width: 100%;
   margin-left: 1rem;
   padding: .5rem;
   border-radius: 30px;
@@ -89,10 +92,12 @@
   background-position: center center;
   background-size: cover;
   height: 35vh;
+  margin-top: .5rem;
 }
 
 #quiz-card {
   height: 35vh;
+  margin-top: .5rem;
 }
 
 #quiz-question {
@@ -154,12 +159,12 @@ section {
 
 .correct {
   background-color: rgb(20, 150, 5, 0.800);
-  box-shadow: 0 .5rem .5rem rgb(20, 150, 5);
+  box-shadow: 0 .25rem .5rem rgb(20, 150, 5);
 }
 
 .wrong {
   background-color: rgba(200, 30, 5, 0.800);
-  box-shadow: 0 .5rem .5rem rgb(200, 30, 5);
+  box-shadow: 0 .25rem .5rem rgb(200, 30, 5);
 }
 
 /* Class used to center elements vertically and horizontally */
