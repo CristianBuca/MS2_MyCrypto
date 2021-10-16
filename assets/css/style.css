@@ -35,6 +35,12 @@
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
 }
 
+#quiz-info:hover {
+  transition: .5s;
+  transform: rotate(360deg) scale(1.25);
+  cursor: help;
+}
+
 #quiz-image {
   background-image: url("/assets/img/quiz-start.jpg");
   border-radius: 5px;
