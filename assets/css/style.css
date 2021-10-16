@@ -41,6 +41,21 @@
   cursor: help;
 }
 
+#info-modal-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background:rgba(0, 0, 0, .4);
+  cursor: pointer;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:10000;
+}
+
+
 #quiz-image {
   background-image: url("/assets/img/quiz-start.jpg");
   border-radius: 5px;
