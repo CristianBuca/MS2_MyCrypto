@@ -27,7 +27,7 @@ function displayQuestion() {
   $('#quiz-question').text(questions[quizIndex].question);
   let answers = questions[quizIndex].choices;
   answers.forEach(choice => {
-    $(`<button class="answer">${choice}</button>`).appendTo('#quiz-answers');
+    $(`<button class="answer quiz-btn">${choice}</button>`).appendTo('#quiz-answers');
   });
   quizIndex ++;
 }
@@ -58,6 +58,8 @@ function checkAnswer() {
  * Conditions are use to check when each division reaches the next time unit and modulo operation assures they reset to 0
  */
 
+//  This function is based on the Crypters Infotech Online Stopwatch tutorial. Full credit in Readme.md
+
 function timer() {
   var startTime = Date.now();
   interval = setInterval(function() {
@@ -66,9 +68,9 @@ function timer() {
     if (mins >= 60) mins %= 60;
     var secs = parseInt(elapsedTime / 1000);
     if (secs >= 60) secs %= 60;
-    var millisecs = elapsedTime;
-    if (millisecs >= 1000) millisecs %= 1000;
-    $('#timer').text(`Elapsed time: ${mins} - ${secs} - ${millisecs}`);
+    var ms = elapsedTime;
+    if (ms >= 1000) ms %= 1000;
+    $('#timer').text(`Elapsed time: ${mins} - ${secs} - ${ms}`);
   }, 10)
 }
 
@@ -122,4 +124,10 @@ $('#quiz-answers').on('click', 'button', checkAnswer);
 $('#quiz-results').on('click', showResults);
 
 // Listens for click on Try Again button and reloads the page
-$('#quiz-restart').on('click', () => {location.reload()});
+$('#quiz-restart').on('click', () => location.reload());
+
+// Listens for click on the info icon and displays the info modal
+$('#quiz-info').on('click', () => $('#info-modal-container').css('display', 'flex'));
+
+// Listens for clicks on the modal close icon and hides the modal
+$('#modal-close').on('click', () => $('#info-modal-container').css('display', 'none'));

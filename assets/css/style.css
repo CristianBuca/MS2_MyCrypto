@@ -46,7 +46,6 @@
   align-items: center;
   justify-content: center;
   background:rgba(0, 0, 0, .4);
-  cursor: pointer;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -54,7 +53,6 @@
   left: 0;
   z-index:10000;
 }
-
 
 #info-modal {
   display: flex;
@@ -70,7 +68,6 @@
   padding: 15px 5%;
 }
 
-
 #modal-close {
   font-weight: bold;
   position: absolute;
@@ -80,6 +77,7 @@
   line-height: 2rem;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 #quiz-image {
