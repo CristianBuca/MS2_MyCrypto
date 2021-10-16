@@ -127,7 +127,7 @@ $('#quiz-results').on('click', showResults);
 $('#quiz-restart').on('click', () => location.reload());
 
 // Listens for click on the info icon and displays the info modal
-$('#quiz-info').on('click', () => $('#info-modal-container').css('display', 'flex'));
+$('#quiz-info').on('click', () => $('#info-modal-container').css({'opacity' : '1', 'pointer-events' : 'auto'}));
 
 // Listens for clicks on the modal close icon and hides the modal
-$('#modal-close').on('click', () => $('#info-modal-container').css('display', 'none'));
+$('#modal-close').on('click', () => $('#info-modal-container').css({'opacity' : '0', 'pointer-events' : 'none'}));
