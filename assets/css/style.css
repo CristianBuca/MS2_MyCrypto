@@ -71,6 +71,17 @@
 }
 
 
+#modal-close {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 2rem;;
+  line-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 #quiz-image {
   background-image: url("/assets/img/quiz-start.jpg");
   border-radius: 5px;
