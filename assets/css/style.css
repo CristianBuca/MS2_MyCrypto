@@ -167,6 +167,7 @@ input:checked[type="checkbox"]:after {
   margin-top: .5rem;
   margin-bottom: .5rem;
   font-family: 'Oxygen';
+  text-align: center;
 }
 
 #quiz-answers {

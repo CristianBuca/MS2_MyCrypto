@@ -128,3 +128,6 @@ $('#quiz-info').on('click', () => $('#info-modal-container').css({'opacity' : '1
 
 // Listens for clicks on the modal close icon and hides the modal
 $('#modal-close').on('click', () => $('#info-modal-container').css({'opacity' : '0', 'pointer-events' : 'none'}));
+
+// Listens for checkbox state change and toggles theme on body
+$('#theme-switch').on('change', () => $('body').toggleClass('dark'));
