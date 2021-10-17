@@ -67,6 +67,18 @@ input:checked[type="checkbox"]:after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
 }
 
+/* Coin display area styles */
+
+.coin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-repeat: no-repeat; */
+  background-position: center center;
+  background-size: cover;
+}
+
 /* Quiz styles */
 
 .quiz-area {
