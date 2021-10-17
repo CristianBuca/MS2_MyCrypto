@@ -93,6 +93,13 @@ function showResults() {
   $('#quiz-restart').removeClass('hide');
 }
 
+function switchTheme() {
+  if (sessionStorage.getItem('theme')) {
+    $('body').addClass('dark');
+    $('#theme-switch input').prop('checked', true);
+  }
+}
+
 // Event Listeners
 
 // Listens for the Start Game button click and displays first question
@@ -135,3 +142,5 @@ $('#theme-switch').on('change', () => {
   $('body').toggleClass('dark');
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
 });
+
+switchTheme();
