@@ -130,4 +130,8 @@ $('#quiz-info').on('click', () => $('#info-modal-container').css({'opacity' : '1
 $('#modal-close').on('click', () => $('#info-modal-container').css({'opacity' : '0', 'pointer-events' : 'none'}));
 
 // Listens for checkbox state change and toggles theme on body
-$('#theme-switch').on('change', () => $('body').toggleClass('dark'));
+// Uses session storage to remember theme selection on reload
+$('#theme-switch').on('change', () => {
+  $('body').toggleClass('dark');
+  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
+});
