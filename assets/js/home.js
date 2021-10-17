@@ -1,15 +1,31 @@
 // Global variables
-var data = []
+// var data = [];
 
 // Functions
 
+// Async function to retrieve coin data from coingecko
+
 async function getCoins() {
   try {
-      const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false');
-      data = await res.json();
+      const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false');
+      const data = await res.json();
+      buildDashboard(data);
   } catch (error) {
       console.log('Error:' + error);
   }
+}
+
+function buildDashboard(coins) {
+  console.log(coins);
+  coins.forEach(coin => {
+    $(`
+    <div class="coin col-6 col-md-4 col-lg-3">
+      <div>${coin.symbol}</div>
+      <div>${coin.name}</div>
+      <div>${coin.current_price}</div>
+    </div>
+    `).appendTo('#coins-wrapper').css('background-image', `url(${coin.image})`);
+  });
 }
 
 /**
@@ -25,7 +41,6 @@ async function getCoins() {
     $('#theme-switch input').prop('checked', true);
   }
 }
-
 
 // Listeners
 
