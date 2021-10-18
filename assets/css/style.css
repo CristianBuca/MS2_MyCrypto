@@ -85,6 +85,17 @@ input:checked[type="checkbox"]:after {
   background-color: white;
 }
 
+.coin-icon {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  background-position: center center;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  opacity: .9;
+  z-index: -1;
+}
 /* Quiz styles */
 
 .quiz-area {
