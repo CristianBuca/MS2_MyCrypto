@@ -21,13 +21,17 @@ function buildDashboard(coins) {
 // Credit to StackOverflow for this syntax. More info in Readme.md
     $('#coins-wrapper').append
     ([
-      $('<div/>', { 'class': 'coin col-6 col-md-4 col-lg-3' }).append 
+      $('<div/>', { 'class': 'coin col-6 col-md-4 col-lg-2' }).append 
       ([
         $('<div/>', { 'class': 'coin-icon', css: {'background-image': `url(${coin.image})`} }),
+        $('<div/>', { 'class': 'coin-icon hide', css: {'background-image': `url(${coin.image})`} }),
         $('<div/>').html(`${coin.symbol}`),
-        $('<div/>').html(`${coin.name}`),
-        $('<div/>').html(`${coin.current_price}`)
-      ])
+        $('<div/>', { css: {'font-weight': 'bold'}}).html(`${coin.name}`),
+        $('<div/>').html(`${coin.current_price} <i class="fas fa-dollar-sign"></i>`),
+        $('<div/>', { 'class': 'hide'}).html(`24h <i class="fas fa-angle-double-up"></i> ${coin.high_24h}`),
+        $('<div/>', { 'class': 'hide', css: {'font-weight': 'bold'}}).html(`${coin.name}`),
+        $('<div/>', { 'class': 'hide'}).html(`24h <i class="fas fa-angle-double-down"></i> ${coin.low_24h}`)
+      ]),
     ]);
   });
 }
@@ -38,12 +42,16 @@ function buildDashboard(coins) {
  * and sets the body and #theme-switch state to last known 
  * selection after page reload.
  */
-
  function switchTheme() {
   if (sessionStorage.getItem('theme')) {
     $('body').addClass('dark');
     $('#theme-switch input').prop('checked', true);
   }
+}
+
+// Function to target children of the coin badged clicked and toggle "hide" class
+function extraInfo() {
+  $(this).children().toggleClass('hide');
 }
 
 // Listeners
@@ -54,6 +62,9 @@ $('#theme-switch').on('change', () => {
   $('body').toggleClass('dark');
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
 });
+
+// Listens for hovering event on each coin badge and triggers extraInfo function
+$('#coins-wrapper').on('mouseenter mouseleave', '.coin', extraInfo);
 
 switchTheme();
 getCoins();
