@@ -16,15 +16,19 @@ async function getCoins() {
 }
 
 function buildDashboard(coins) {
-  console.log(coins);
   coins.forEach(coin => {
-    $(`
-    <div class="coin col-6 col-md-4 col-lg-3">
-      <div>${coin.symbol}</div>
-      <div>${coin.name}</div>
-      <div>${coin.current_price}</div>
-    </div>
-    `).appendTo('#coins-wrapper').css('background-image', `url(${coin.image})`);
+
+// Credit to StackOverflow for this syntax. More info in Readme.md
+    $('#coins-wrapper').append
+    ([
+      $('<div/>', { 'class': 'coin col-6 col-md-4 col-lg-3' }).append 
+      ([
+        $('<div/>', { 'class': 'coin-icon', css: {'background-image': `url(${coin.image})`} }),
+        $('<div/>').html(`${coin.symbol}`),
+        $('<div/>').html(`${coin.name}`),
+        $('<div/>').html(`${coin.current_price}`)
+      ])
+    ]);
   });
 }
 
@@ -52,5 +56,4 @@ $('#theme-switch').on('change', () => {
 });
 
 switchTheme();
-
 getCoins();
