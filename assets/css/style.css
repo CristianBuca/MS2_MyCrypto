@@ -67,13 +67,29 @@ input:checked[type="checkbox"]:after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
 }
 
-/* Coin badge style */
+/* Coin badge and dashboard style */
+
+#dashboard {
+  height: 90vh;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#title {
+  font-family: "Ubuntu";
+  margin: 1rem;
+
+}
 
 .coin {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
+  font-family: "Fira Sans";
   padding: .5rem;
   box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .5);
   transition: all .3s;
@@ -81,7 +97,7 @@ input:checked[type="checkbox"]:after {
 }
 
 .coin:hover {
-  transform: rotate(-10deg);
+  transform: scale(1.1) rotate(-5deg);
   background-color: white;
 }
 
@@ -96,7 +112,8 @@ input:checked[type="checkbox"]:after {
   opacity: .9;
   z-index: -1;
 }
-/* Quiz styles */
+
+/* Quiz style */
 
 .quiz-area {
   margin-top: 1rem;
@@ -145,7 +162,7 @@ input:checked[type="checkbox"]:after {
   z-index:10000;
   opacity: 0;
   pointer-events: none;
-  transition: .5s opacity ease;
+  transition: opacity .5s ease;
 }
 
 #info-modal {
@@ -195,7 +212,7 @@ input:checked[type="checkbox"]:after {
 #quiz-question {
   margin-top: .5rem;
   margin-bottom: .5rem;
-  font-family: 'Oxygen';
+  font-family: "Oxygen";
   text-align: center;
 }
 
@@ -206,7 +223,7 @@ input:checked[type="checkbox"]:after {
   align-items: center;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   text-align: center;
 }
 
