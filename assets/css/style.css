@@ -80,6 +80,11 @@ input:checked[type="checkbox"]:after {
   cursor: pointer;
 }
 
+.coin:hover {
+  transform: rotate(-10deg);
+  background-color: white;
+}
+
 /* Quiz styles */
 
 .quiz-area {
