@@ -27,6 +27,17 @@ async function getCoinList() {
   }
 }
 
+
+function storeAsset() {
+    const key = $('#coin-select')[0].value;
+    const amount = $('#inp-value')[0].value;
+  
+    dataList.forEach(item => {
+      if ((key.toLowerCase() === item.symbol.toLowerCase() || key.toLowerCase() === item.name.toLowerCase()) && amount) 
+      localStorage.setItem(item.name, amount)
+    });
+}
+
 // Event Listeners
 
 // Listens for checkbox state change and toggles theme on body
@@ -36,6 +47,14 @@ $('#theme-switch').on('change', () => {
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
 });
 
+$('#add-asset').on('click', storeAsset);
+
+for (i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i);
+  const value = localStorage.getItem(key);
+
+  lsOutput.innerHTML += `${key}: ${value}</br>`;
+}
 
 switchTheme();
 getCoinList()
