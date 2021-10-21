@@ -1,6 +1,17 @@
 // Global Variables
+var dataList = new Array();
 
 // Functions
+
+async function getCoinList() {
+  try {
+    const response = await fetch("https://api.coingecko.com/api/v3/coins/list");
+    dataList = await response.json();
+    $('#all-coins').html(`${dataList.map((coin) => `<option value="${coin.name}"></option>`)}`);
+  } catch(e) {
+    console.log(e);
+  }
+}
 
 /**
  * Function to maintain theme selection during the session
@@ -25,4 +36,6 @@ $('#theme-switch').on('change', () => {
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
 });
 
+
 switchTheme();
+getCoinList()
