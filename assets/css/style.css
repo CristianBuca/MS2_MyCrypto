@@ -12,6 +12,37 @@
   color: rgb(200, 200, 200);
 }
 
+/* Global styles */
+
+section {
+  padding: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.correct {
+  background-color: rgb(20, 150, 5, 0.800);
+  box-shadow: 0 .25rem .5rem rgb(20, 150, 5);
+}
+
+.wrong {
+  background-color: rgb(250, 100, 30);
+  box-shadow: 0 .25rem .5rem rgb(255, 34, 0);
+}
+
+/* Class used to center elements vertically and horizontally */
+/* Credit https://stackoverflow.com/a/16299904 */
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); /* for IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* for Safari */
+}
+
 /* Style for the theme switcher was done following the video tutorial from 
 "Online Tutorials - Pure Css Custom Checkbox Design. Full credit in Readme.md*/
 
@@ -78,9 +109,9 @@ h1 {
   font-size: 2rem;
 }
 
-#title {
+.title {
   font-family: "Ubuntu";
-  margin: 1rem;
+  margin: 5rem 1rem;
 
 }
 
@@ -97,7 +128,7 @@ h1 {
 }
 
 .coin:hover {
-  transform: scale(1.1) rotate(-5deg);
+  transform: scale(1.1) rotate(-3deg);
   background-color: white;
 }
 
@@ -262,36 +293,14 @@ h1 {
   margin: .5rem;
   height: 10vh;
   border-radius: 10px;
+  
+}
+
+
+/* Portfolio Styles */
+
+#asset {
   box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .25);
-}
-
-section {
-  padding: 0.5rem;
-}
-
-.hide {
-  display: none;
-}
-
-.correct {
-  background-color: rgb(20, 150, 5, 0.800);
-  box-shadow: 0 .25rem .5rem rgb(20, 150, 5);
-}
-
-.wrong {
-  background-color: rgb(250, 100, 30);
-  box-shadow: 0 .25rem .5rem rgb(255, 34, 0);
-}
-
-/* Class used to center elements vertically and horizontally */
-/* Credit https://stackoverflow.com/a/16299904 */
-.centered {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); /* for IE 9 */
-  -webkit-transform: translate(-50%, -50%); /* for Safari */
 }
 
 /* Media Queries */
