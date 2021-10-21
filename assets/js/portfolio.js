@@ -27,6 +27,12 @@ async function getCoinList() {
   }
 }
 
+/**
+ * This function checks if the user has input the name or the cryptocurrency symbol
+ * against the list of coins retrieved from the API.
+ * For a user-friendly experience all strings are converted to lowercase before being checked.
+ * Function uses Local Storage to keep track of the user's portfolio between sessions.
+ */
 
 function storeAsset() {
     const key = $('#coin-select')[0].value;
