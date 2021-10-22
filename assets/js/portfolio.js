@@ -42,7 +42,39 @@ function buildPortfolio() {
 async function displayPortfolio() {
   const api = 'https://api.coingecko.com/api/v3/coins/markets'
   try {
+    // Get ids to be used in api url from portfolio into a string separated by ","
+    let ids = portfolio.map(asset => asset.coin.toLowerCase()).join(',');
+    let url = `${api}?vs_currency=usd&ids=${ids}&order=market_cap_desc&per_page=100&page=1&sparkline=false`;
+    console.log(url);
+    const response = await fetch(url);
+    const data = await (response.json());
+    let portfolioTotal = 0;
+    console.log(data);
 
+    data.forEach(asset => {
+      var match = portfolio.find(obj => {
+        return obj.coin === asset.name;
+      });
+      var assetWorth = match.amount * asset.current_price;
+      $('#portfolio').append
+        ([$('<div/>', {'class': 'asset-wrapper col-12 col-md-6 col-lg-4'}).append
+          ([$('<div/>', {'class': 'asset'}).append
+            ([$('<div/>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
+              $('<div/>').html(asset.name),
+              $('<div/>').html(`Current price: ${asset.current_price}`),
+              $('<div/>').html(assetWorth),
+            ])
+          ])
+        ])
+        portfolioTotal += assetWorth;
+    })
+    console.log(portfolioTotal);
+  }
+  catch(e) {
+    console.error(e);
+    alert('CoinGeko is a bit slow sending the data. Try again later');
+  }
+}
 
 /**
  * Function to maintain theme selection through the session.
