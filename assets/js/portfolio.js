@@ -1,6 +1,6 @@
 // Global Variables
 var coinList = new Array();
-
+var portfolio = new Array();
 // Functions
 
 async function getCoinList() {
@@ -29,6 +29,13 @@ async function getCoinList() {
   });
 }
 
+// Credit for iterating localStorage https://stackoverflow.com/a/37507935
+function buildPortfolio() {
+  Object.keys(localStorage).forEach(asset => {
+    portfolio.push({coin: asset, amount: localStorage.getItem(asset)});
+  })
+}
+
 /**
  * Function to maintain theme selection during the session
  * Uses session storage data from last #theme-switch change
@@ -53,12 +60,6 @@ $('#theme-switch').on('change', () => {
 
 $('#add-asset').on('click', storeAsset);
 
-for (i = 0; i < localStorage.length; i++) {
-  const key = localStorage.key(i);
-  const value = localStorage.getItem(key);
-
-  lsOutput.innerHTML += `${key}: ${value}</br>`;
-}
-
 switchTheme();
-getCoinList()
+buildPortfolio();
+getCoinList();
