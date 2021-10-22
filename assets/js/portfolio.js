@@ -1,6 +1,8 @@
 // Global Variables
+
 var coinList = new Array();
 var portfolio = new Array();
+
 // Functions
 
 async function getCoinList() {
@@ -25,22 +27,27 @@ async function getCoinList() {
 
   coinList.forEach(item => {
     if ((key.toLowerCase() === item.symbol.toLowerCase() || key.toLowerCase() === item.name.toLowerCase()) && amount) 
-    localStorage.setItem(item.name, amount)
+    localStorage.setItem(item.name, amount);
   });
+  location.reload();
 }
 
 // Credit for iterating localStorage https://stackoverflow.com/a/37507935
 function buildPortfolio() {
   Object.keys(localStorage).forEach(asset => {
     portfolio.push({coin: asset, amount: localStorage.getItem(asset)});
-  })
+  });
 }
 
+async function displayPortfolio() {
+  const api = 'https://api.coingecko.com/api/v3/coins/markets'
+  try {
+
+
 /**
- * Function to maintain theme selection during the session
- * Uses session storage data from last #theme-switch change
- * and sets the body and #theme-switch state to last known 
- * selection after page reload.
+ * Function to maintain theme selection through the session.
+ * Uses session storage data from last #theme-switch change and sets the body and #theme-switch 
+ * state to last known selection after page reload.
  */
  function switchTheme() {
   if (sessionStorage.getItem('theme')) {
@@ -63,3 +70,4 @@ $('#add-asset').on('click', storeAsset);
 switchTheme();
 buildPortfolio();
 getCoinList();
+displayPortfolio();
