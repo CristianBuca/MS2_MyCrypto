@@ -1,29 +1,15 @@
 // Global Variables
-var dataList = new Array();
+var coinList = new Array();
 
 // Functions
 
 async function getCoinList() {
   try {
     const response = await fetch("https://api.coingecko.com/api/v3/coins/list");
-    dataList = await response.json();
-    $('#all-coins').html(`${dataList.map((coin) => `<option value="${coin.name}"></option>`)}`);
+    coinList = await response.json();
+    $('#all-coins').html(`${coinList.map((coin) => `<option value="${coin.name}"></option>`)}`);
   } catch(e) {
     console.log(e);
-  }
-}
-
-/**
- * Function to maintain theme selection during the session
- * Uses session storage data from last #theme-switch change
- * and sets the body and #theme-switch state to last known 
- * selection after page reload.
- */
-
- function switchTheme() {
-  if (sessionStorage.getItem('theme')) {
-    $('body').addClass('dark');
-    $('#theme-switch input').prop('checked', true);
   }
 }
 
@@ -33,15 +19,27 @@ async function getCoinList() {
  * For a user-friendly experience all strings are converted to lowercase before being checked.
  * Function uses Local Storage to keep track of the user's portfolio between sessions.
  */
+ function storeAsset() {
+  const key = $('#coin-select')[0].value;
+  const amount = $('#inp-value')[0].value;
 
-function storeAsset() {
-    const key = $('#coin-select')[0].value;
-    const amount = $('#inp-value')[0].value;
-  
-    dataList.forEach(item => {
-      if ((key.toLowerCase() === item.symbol.toLowerCase() || key.toLowerCase() === item.name.toLowerCase()) && amount) 
-      localStorage.setItem(item.name, amount)
-    });
+  coinList.forEach(item => {
+    if ((key.toLowerCase() === item.symbol.toLowerCase() || key.toLowerCase() === item.name.toLowerCase()) && amount) 
+    localStorage.setItem(item.name, amount)
+  });
+}
+
+/**
+ * Function to maintain theme selection during the session
+ * Uses session storage data from last #theme-switch change
+ * and sets the body and #theme-switch state to last known 
+ * selection after page reload.
+ */
+ function switchTheme() {
+  if (sessionStorage.getItem('theme')) {
+    $('body').addClass('dark');
+    $('#theme-switch input').prop('checked', true);
+  }
 }
 
 // Event Listeners
