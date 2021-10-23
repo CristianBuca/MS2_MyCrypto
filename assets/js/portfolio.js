@@ -32,6 +32,11 @@ async function getCoinList() {
   location.reload();
 }
 
+function removeAsset() {
+  
+  $(this).closest('tr').remove();
+}
+
 // Credit for iterating localStorage https://stackoverflow.com/a/37507935
 function buildPortfolio() {
   Object.keys(localStorage).forEach(asset => {
