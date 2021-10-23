@@ -120,6 +120,8 @@ $('#theme-switch').on('change', () => {
 
 $('#add-asset').on('click', storeAsset);
 
+$('#portfolio').on('click', '.remove-asset', removeAsset);
+
 switchTheme();
 buildPortfolio();
 getCoinList();
