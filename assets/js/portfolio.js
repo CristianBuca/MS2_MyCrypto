@@ -10,6 +10,7 @@ async function getCoinList() {
     const response = await fetch("https://api.coingecko.com/api/v3/coins/list");
     coinList = await response.json();
     $('#all-coins').html(`${coinList.map((coin) => `<option value="${coin.name}"></option>`)}`);
+    console.log(coinList);
   } catch(e) {
     console.log(e);
   }
@@ -27,7 +28,7 @@ async function getCoinList() {
 
   coinList.forEach(item => {
     if ((key.toLowerCase() === item.symbol.toLowerCase() || key.toLowerCase() === item.name.toLowerCase()) && amount) 
-    localStorage.setItem(item.name, amount);
+    localStorage.setItem(item.id, amount);
   });
   location.reload();
 }
@@ -53,7 +54,7 @@ async function displayPortfolio() {
 
     data.forEach(asset => {
       var match = portfolio.find(obj => {
-        return obj.coin === asset.name;
+        return obj.coin === asset.id;
       });
       var assetWorth = match.amount * asset.current_price;
       $('#portfolio').append
@@ -68,7 +69,7 @@ async function displayPortfolio() {
         ])
         portfolioTotal += assetWorth;
     })
-    console.log(portfolioTotal);
+    $('#total').html(portfolioTotal);
   }
   catch(e) {
     console.error(e);
