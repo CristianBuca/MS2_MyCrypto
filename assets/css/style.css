@@ -314,6 +314,10 @@ table, th, td {
   background-size: cover;
 }
 
+.asset-id {
+  font-size: 0;
+}
+
 /* Media Queries */
 /* For anything smaller than an ipad the #quiz-image is hidden through Bootstrap and #quiz-card takes the extra space */
 @media screen and (max-width: 767px) {

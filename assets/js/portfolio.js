@@ -33,8 +33,11 @@ async function getCoinList() {
 }
 
 function removeAsset() {
-  
-  $(this).closest('tr').remove();
+  var id = $(this).closest('tr').find('.asset-id').html();
+  console.log(id);
+  localStorage.removeItem(id);
+  location.reload();
+  // $(this).closest('tr').remove();
 }
 
 // Credit for iterating localStorage https://stackoverflow.com/a/37507935
@@ -78,7 +81,8 @@ async function displayPortfolio() {
             $('<td>').html(asset.current_price),
             $('<td>').html(match.amount),
             $('<td>').html(assetWorth),
-            $('<td>', {'class': 'remove-asset'}).html('<i class="fas fa-trash-alt"></i>')
+            $('<td>', {'class': 'remove-asset'}).html('<i class="fas fa-trash-alt"></i>'),
+            $('<td>', {'class': 'asset-id'}).html(asset.id)
           ])
         ])
 
