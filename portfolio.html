@@ -41,43 +41,17 @@
         <h1>Keep track of all your assets in one place</h1>
       </div>
       <section class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Current Portfolio Value</h2>
-            <div id="total">total</div>
-            <br>
-            <label for="coin-select">Add Asset</label>
-            <input list="all-coins" name="coin-select" id="coin-select">
-            <datalist id="all-coins"></datalist>
-            <input type="number" placeholder="Amount" id="inp-value">
-            <button type="button" id="add-asset">Add</button>
-            <!-- <table>
-              <tr>
-                <th>Name</th>
-                <th>Bought @ Price</th>
-                <th>Current Price</th>
-                <th>24H</th>
-                <th>Coins in Holdings</th>
-                <th>Value of Holdings</th>
-                <th>Profit / Loss</th>
-                <th>Manage Entry</th>
-              </tr>
-              <tr>
-                <td>BTC</td>
-                <td>40000</td>
-                <td>65000</td>
-                <td>20%</td>
-                <td>1</td>
-                <td>65000</td>
-                <td>+25000</td>
-                <td><button>Remove</button></td>
-              </tr>
-            </table> -->
-          </div>
-          <div id="asset" class="col-12 col-md-6 col-lg-4">coin</div>
-          <div id="asset" class="col-12 col-md-6 col-lg-4">coin</div>
-          <div id="asset" class="col-12 col-md-6 col-lg-4">coin</div>
+        <h2>Current Portfolio Value</h2>
+        <div id="total">total</div>
+        <div id="asset-input">
+          <label for="coin-select">Add Asset</label>
+          <input list="all-coins" name="coin-select" id="coin-select">
+          <datalist id="all-coins"></datalist>
+          <input type="number" placeholder="Amount" id="inp-value">
+          <button type="button" id="add-asset">Add</button>
         </div>
+        <div id="portfolio">
+        </div>  
       </section>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

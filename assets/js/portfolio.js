@@ -10,7 +10,6 @@ async function getCoinList() {
     const response = await fetch("https://api.coingecko.com/api/v3/coins/list");
     coinList = await response.json();
     $('#all-coins').html(`${coinList.map((coin) => `<option value="${coin.name}"></option>`)}`);
-    console.log(coinList);
   } catch(e) {
     console.log(e);
   }
@@ -46,27 +45,48 @@ async function displayPortfolio() {
     // Get ids to be used in api url from portfolio into a string separated by ","
     let ids = portfolio.map(asset => asset.coin.toLowerCase()).join(',');
     let url = `${api}?vs_currency=usd&ids=${ids}&order=market_cap_desc&per_page=100&page=1&sparkline=false`;
-    console.log(url);
     const response = await fetch(url);
     const data = await (response.json());
     let portfolioTotal = 0;
-    console.log(data);
+    $('#portfolio').append
+      ([$('<table>', {'id': 'asset-table'}).append
+        ([$('<tr>').append
+          ([$('<th>').html(' '),
+            $('<th>').html('Name'),
+            $('<th>').html('Price'),
+            $('<th>').html('Holdings'),
+            $('<th>').html('Value'),
+            $('<th>').html(' ')
+          ])
+        ])
+      ])
 
     data.forEach(asset => {
       var match = portfolio.find(obj => {
         return obj.coin === asset.id;
       });
       var assetWorth = match.amount * asset.current_price;
-      $('#portfolio').append
-        ([$('<div/>', {'class': 'asset-wrapper col-12 col-md-6 col-lg-4'}).append
-          ([$('<div/>', {'class': 'asset'}).append
-            ([$('<div/>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
-              $('<div/>').html(asset.name),
-              $('<div/>').html(`Current price: ${asset.current_price}`),
-              $('<div/>').html(assetWorth),
-            ])
+      $('#asset-table').append
+        ([$('<tr>').append
+          ([$('<td>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
+            $('<td>').html(asset.name),
+            $('<td>').html(asset.current_price),
+            $('<td>').html(match.amount),
+            $('<td>').html(assetWorth),
+            $('<td>', {'class': 'remove-asset'}).html('<i class="fas fa-trash-alt"></i>')
           ])
         ])
+
+        // , .html(`<image src=${asset.image}>`){'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}
+        // ([$('<div/>', {'class': 'asset-wrapper col-12 col-md-6 col-lg-4'}).append
+        //   ([$('<div/>', {'class': 'asset'}).append
+        //     ([$('<div/>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
+        //       $('<div/>').html(asset.name),
+        //       $('<div/>').html(`Current price: ${asset.current_price}`),
+        //       $('<div/>').html(assetWorth),
+        //     ])
+        //   ])
+        // ])
         portfolioTotal += assetWorth;
     })
     $('#total').html(portfolioTotal);
