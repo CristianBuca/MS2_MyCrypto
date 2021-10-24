@@ -12,10 +12,22 @@ The webapp is designed as an interactive project that gives the user the ability
 * Use crypto-currency APIs to display relevant data to the user.
 * Offer the user the ability to build their portfolio on our platform.
 * Offer the user a interactive way of learning more about blockchain and testing their knowledge.
-* Offer a way for the user to communicate with the owner
+* Offer a way for the user to communicate with the owner.
 
 ## **User Goals**
 * Find price and performance related information for the main crypto-currencies by market valuation.
 * Ability to customize a list of currencies and store the data on my device.
 * Ability to view the current valuation of assets and portfolio.
 * Learn blockchain related information and test my knowledge.
+
+## **User Stories**
+
+**New Users:** 
+
+1. As a new user, I want to see recent data on major crypto-currencies by market capitalization.
+2. As a new user, I want to add personal crypto-currency assets.
+3. As a new user, I want to see the asset valuation.
+4. As a new user, I want to see the total portfolio valuation.
+5. As a new user, I want to find new information relating to the blockchain.
+
+
