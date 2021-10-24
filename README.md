@@ -72,6 +72,39 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 * Interactive quiz with information from the crypto-space.
 * Modal with extra information on the quiz design and interaction.
 * Modal with built in e-mail function using external API (EmailJS).
+* Interactive color theme switch.
 * Customized 404 Error Page.
 * Favicon icons.
+
+# **Structure**
+
+## **Wireframes**
+
+[Home Page]
+
+[Portfolio]
+
+[Quiz]
+
+[Email Modal]
+
+## **Features**
+
+### **Landing Page**
+
+<details>
+  <summary> (Expand) Currency badges displaying up-to-date information.</summary>
+
+![Currency Badge]()
+![Currency Badge on interaction]()
+</details>
+
+The Landing Page features a grid displaying major crypto-currencies and their current prices. Currencies are organized by market capitalization in descending order. Each currency is displayed in it's own badge that the user can interact with by mouse hover (or tap on touch devices), to access 24-hour high and low prices.
+
+*User stories solved by this feature:*
+
+1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
+
+
+
 
