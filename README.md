@@ -105,6 +105,25 @@ The Landing Page features a grid displaying major crypto-currencies and their cu
 
 1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
 
+### **Portfolio**
+
+<details>
+  <summary> (Expand) Portfolio showcase.</summary>
+
+![Portfolio Table]()
+</details>
+
+The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. The asset is added to the portfolio and displayed with the current market price and a calculation of how much the user's holdings are valued at, both individually and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
+
+*User stories solved by this feature:*
+
+2 - As a new user, I want to add personal crypto-currency assets.
+3 - As a new user, I want to see the asset valuation.
+4 - As a new user, I want to see the total portfolio valuation.
+7 - As a regular user, I want to store my portfolio data.
+9 - As a regular user, I want the ability to edit previous portfolio entries.
+
+
 
 
 
