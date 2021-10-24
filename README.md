@@ -29,16 +29,31 @@ The webapp is designed as an interactive project that gives the user the ability
 3. As a new user, I want to see the asset valuation.
 4. As a new user, I want to see the total portfolio valuation.
 5. As a new user, I want to learn new information relating to the blockchain.
+6. As a new user, I want to learn more about the knowledge quiz.
 
 **Regular Users:**
 
-6. As a regular user, I want to store my portfolio data.
-7. As a regular user, I want the option to change the current webapp color theme.
-8. As a regular user, I want the ability to edit previous portfolio entries.
-9. As a regular user, I want to test the previously acquired knowledge.
+7. As a regular user, I want to store my portfolio data.
+8. As a regular user, I want the option to change the current webapp color theme.
+9. As a regular user, I want the ability to edit previous portfolio entries.
+10. As a regular user, I want to test the previously acquired knowledge.
+
 
 **Site Owner:**
 
-10. As a site owner, I want the knowledge quiz to be versatile and easy to update.
-11. As a site owner, I want to provide the user a way to get in contact.
-12. As a site owner, I want to showcase my social media.
+11. As a site owner, I want the knowledge quiz to be versatile and easy to update.
+12. As a site owner, I want to provide the user a way to get in contact.
+13. As a site owner, I want to showcase my social media.
+
+## **Design**
+
+I have opted for minimalist design focused on user interactivity. The user has the ability to switch between Light and Dark modes with the help of the suggestive switch that is always accessible on the Navbar.
+The webapp was designed with a mobile-first approach using BootStrap grid for elements to re-arrange based on screen size. 
+The Navbar was also built using BootStrap and collapses on small devices remaining fixed on top of the screen for easy access to the color theme switcher and links.
+
+### **Colour Scheme**
+
+
+### **Font Scheme**
+
+Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen Family for information of focus and Fira Sans for general text. These fonts were chosen using Google Fonts as they compliment each other.
