@@ -28,6 +28,13 @@ The webapp is designed as an interactive project that gives the user the ability
 2. As a new user, I want to add personal crypto-currency assets.
 3. As a new user, I want to see the asset valuation.
 4. As a new user, I want to see the total portfolio valuation.
-5. As a new user, I want to find new information relating to the blockchain.
+5. As a new user, I want to learn new information relating to the blockchain.
+
+**Regular Users:**
+
+6. As a regular user, I want to store my portfolio data.
+7. As a regular user, I want the option to change the current webapp color theme.
+8. As a regular user, I want the ability to edit previous portfolio entries.
+9. As a regular user, I want to test the previously acquired knowledge.
 
 
