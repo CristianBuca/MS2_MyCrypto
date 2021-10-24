@@ -57,3 +57,21 @@ The Navbar was also built using BootStrap and collapses on small devices remaini
 ### **Font Scheme**
 
 Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen Family for information of focus and Fira Sans for general text. These fonts were chosen using Google Fonts as they compliment each other.
+
+# **Scope**
+
+## Feature requirements:
+
+* Responsive webapp for all devices.
+* Navigation bar that adapts to device size.
+* Landing Page displaying current information on major crypto-currencies using calls to an external API (CoinGeko API).
+* Interactive display of secondary information on major crypto-currencies.
+* Personalized Portfolio Page displaying user assets data by calling external API(CoinGeko API).
+* Portfolio interactivity (ability to add and remove assets by user).
+* Portfolio persistance by storing data on the user's machine.
+* Interactive quiz with information from the crypto-space.
+* Modal with extra information on the quiz design and interaction.
+* Modal with built in e-mail function using external API (EmailJS).
+* Customized 404 Error Page.
+* Favicon icons.
+
