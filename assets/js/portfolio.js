@@ -32,12 +32,16 @@ async function getCoinList() {
   location.reload();
 }
 
+/**
+ * This function selects the hidden currency ID stored in the asset row that is selected for removal
+ * by the event listener and removes it from localStorage, then removes the assets table row.
+ * Credit to Codepedia for the syntax: https://codepedia.info/jquery-get-table-cell-td-value-div/
+ */
 function removeAsset() {
   var id = $(this).closest('tr').find('.asset-id').html();
   console.log(id);
   localStorage.removeItem(id);
-  location.reload();
-  // $(this).closest('tr').remove();
+  $(this).closest('tr').remove();
 }
 
 // Credit for iterating localStorage https://stackoverflow.com/a/37507935
@@ -78,9 +82,9 @@ async function displayPortfolio() {
         ([$('<tr>').append
           ([$('<td>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
             $('<td>').html(asset.name),
-            $('<td>').html(asset.current_price),
+            $('<td>').html(asset.current_price.toFixed(3)),
             $('<td>').html(match.amount),
-            $('<td>').html(assetWorth),
+            $('<td>').html(assetWorth.toFixed(3)),
             $('<td>', {'class': 'remove-asset'}).html('<i class="fas fa-trash-alt"></i>'),
             $('<td>', {'class': 'asset-id'}).html(asset.id)
           ])
@@ -102,7 +106,7 @@ async function displayPortfolio() {
   }
   catch(e) {
     console.error(e);
-    alert('CoinGeko is a bit slow sending the data. Try again later');
+    // alert('CoinGeko is a bit slow sending the data. Try again later');
   }
 }
 
