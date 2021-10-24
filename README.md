@@ -37,4 +37,8 @@ The webapp is designed as an interactive project that gives the user the ability
 8. As a regular user, I want the ability to edit previous portfolio entries.
 9. As a regular user, I want to test the previously acquired knowledge.
 
+**Site Owner:**
 
+10. As a site owner, I want the knowledge quiz to be versatile and easy to update.
+11. As a site owner, I want to provide the user a way to get in contact.
+12. As a site owner, I want to showcase my social media.
