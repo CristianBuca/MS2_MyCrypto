@@ -14,3 +14,8 @@ The webapp is designed as an interactive project that gives the user the ability
 * Offer the user a interactive way of learning more about blockchain and testing their knowledge.
 * Offer a way for the user to communicate with the owner
 
+## **User Goals**
+* Find price and performance related information for the main crypto-currencies by market valuation.
+* Ability to customize a list of currencies and store the data on my device.
+* Ability to view the current valuation of assets and portfolio.
+* Learn blockchain related information and test my knowledge.
