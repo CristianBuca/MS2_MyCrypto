@@ -171,3 +171,18 @@ The Navbar is responsive to the size of the user's device and houses the Light/D
 *User stories solved by this feature:*
 
 8 - As a regular user, I want the option to change the current webapp color theme.
+
+### **Email Modal**
+
+<details>
+  <summary> (Expand) Email Modal </summary>
+
+![Email Modal]()
+</details>
+
+The Email Modal makes use of the EmailJS API to give the user the ability to send emails to the site owner directly from the webapp.
+
+*User stories solved by this feature:*
+
+12. As a site owner, I want to provide the user a way to get in contact.
+
