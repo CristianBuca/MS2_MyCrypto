@@ -60,32 +60,32 @@
 <!-- Modal Start. Modal was built with Bootstrap component and was styled and modified to suit this site's purpose. -->
   <div class="modal" tabindex="-1" role="dialog" id="contactModal" style="display: none" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Get in Touch!</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">x</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form onsubmit="return sendMail(this);">
-                    <div class="form-group">
-                        <label for="userName">Your Name</label>
-                        <input type="text" class="form-control" id="userName" name="userName" placeholder="What is your name?" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="What is your email address?" required>
-                        <small id="emailHelp" class="form-text text-muted">We won't share your info with anyone else</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
-                    </div>
-                    <input type="submit" class="modalButton btn" value="Send">
-                </form>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Get in Touch!</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">x</span>
+          </button>
         </div>
+          <div class="modal-body">
+            <form onsubmit="return sendMail(this);">
+            <div class="form-group">
+              <label for="userName">Your Name</label>
+              <input type="text" class="form-control" id="userName" name="userName" placeholder="What is your name?" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="What is your email address?" required>
+              <small id="emailHelp" class="form-text text-muted">We won't share your info with anyone else</small>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+            </div>
+            <input type="submit" class="modalButton btn" value="Send">
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 <!-- Modal End -->
