@@ -209,3 +209,20 @@ In the footer user can find links the owner social medial.
 </details>
 
 The 404 Error Page is displayed in case of broken or absent links. It provides the user with the ability to go back to one of the webapp pages and maintains user engagement.
+
+## **Technologies Used**
+
+* **[HTML5](https://html.spec.whatwg.org)**
+* **[CSS3](https://www.w3.org/Style/CSS/Overview.en.html)**
+* **[JavaScript](https://www.javascript.com)**
+* **[Bootstrap v3.4.1](https://getbootstrap.com)** Components for the navbar, email modal and grid system were taken from the Bootstrap library.
+* **[JQuery 3.6.0](https://jquery.com)** Was used for dom manipulation.
+* **[Github](https://github.com)** For storing my repository.
+* **[Github Desktop](https://desktop.github.com)** For managing synchronizations between local and cloud-stored repositories.
+* **[Git](https://git-scm.com)** For version control.
+* **[VSCode](https://code.visualstudio.com)** IDE for writing code.
+* **[Font Awesome](https://fontawesome.com)** Provided the icons for social media links.
+* **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
+* **[Optimizilla](https://imagecompressor.com)** To optimise images for web applications.
+* **[Favicon.io](https://favicon.io)** For creating the favicon.
+* **[Colormind](http://colormind.io)** Color scheme generator.
