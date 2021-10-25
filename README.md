@@ -103,7 +103,7 @@ The Landing Page features a grid displaying major crypto-currencies and their cu
 
 *User stories solved by this feature:*
 
-1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
+* 1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
 
 ### **Portfolio**
 
@@ -117,11 +117,11 @@ The Portfolio Page displays all the user's assets in the form of a table. The us
 
 *User stories solved by this feature:*
 
-2 - As a new user, I want to add personal crypto-currency assets.
-3 - As a new user, I want to see the asset valuation.
-4 - As a new user, I want to see the total portfolio valuation.
-7 - As a regular user, I want to store my portfolio data.
-9 - As a regular user, I want the ability to edit previous portfolio entries.
+* 2 - As a new user, I want to add personal crypto-currency assets.
+* 3 - As a new user, I want to see the asset valuation.
+* 4 - As a new user, I want to see the total portfolio valuation.
+* 7 - As a regular user, I want to store my portfolio data.
+* 9 - As a regular user, I want the ability to edit previous portfolio entries.
 
 ### **Quiz**
 
@@ -152,10 +152,10 @@ The quiz is built to be versatile and easy to update. By loading the questions f
 
 *User stories solved by this feature:*
 
-5 - As a new user, I want to learn new information relating to the blockchain.
-6 - As a new user, I want to learn more about the knowledge quiz.
-10 - As a regular user, I want to test the previously acquired knowledge.
-11 - As a site owner, I want the knowledge quiz to be versatile and easy to update.
+* 5 - As a new user, I want to learn new information relating to the blockchain.
+* 6 - As a new user, I want to learn more about the knowledge quiz.
+* 10 - As a regular user, I want to test the previously acquired knowledge.
+* 11 - As a site owner, I want the knowledge quiz to be versatile and easy to update.
 
 ### **Navbar**
 
@@ -170,7 +170,7 @@ The Navbar is responsive to the size of the user's device and houses the Light/D
 
 *User stories solved by this feature:*
 
-8 - As a regular user, I want the option to change the current webapp color theme.
+* 8 - As a regular user, I want the option to change the current webapp color theme.
 
 ### **Email Modal**
 
@@ -184,7 +184,7 @@ The Email Modal makes use of the EmailJS API to give the user the ability to sen
 
 *User stories solved by this feature:*
 
-12 - As a site owner, I want to provide the user a way to get in contact.
+* 12 - As a site owner, I want to provide the user a way to get in contact.
 
 ### **Footer**
 
@@ -198,7 +198,7 @@ In the footer user can find links the owner social medial.
 
 *User stories solved by this feature:*
 
-13 - As a site owner, I want to showcase my social media.
+* 13 - As a site owner, I want to showcase my social media.
 
 ### **404 Page**
 
