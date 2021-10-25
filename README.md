@@ -84,7 +84,7 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 [Portfolio]
 
-[Quiz]
+[Quiz](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/crypto_quiz.png)
 
 [Email Modal](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/email_modal.png)
 
