@@ -82,7 +82,7 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 [Landing Page](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/landing_page.png)
 
-[Portfolio]
+[Portfolio](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/portfolio_page.png)
 
 [Quiz](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/crypto_quiz.png)
 
