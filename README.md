@@ -148,11 +148,14 @@ The choices in the design were made for first time users to maintain engagement 
 For the returning user the stopwatch and the score keeping provides the ability to test previously acquired knowledge and a challenge to beat previous score and completion time. 
 Score is kept not only by rewarding points for right answer selections but by deducting points for wrong answer selections and coupled with the stopwatch feature it adds a variable layer of difficulty and replay value to the game.
 
+The quiz is built to be versatile and easy to update. By loading the questions from a separate file in JSON format the site owner is able to easily change or update game. The quiz script is able to adapt to variable number of questions as the HTML is dynamically generated trough JavaScript.
+
 *User stories solved by this feature:*
 
 5 - As a new user, I want to learn new information relating to the blockchain.
 6 - As a new user, I want to learn more about the knowledge quiz.
 10 - As a regular user, I want to test the previously acquired knowledge.
+11 - As a site owner, I want the knowledge quiz to be versatile and easy to update.
 
 ### **Navbar**
 
@@ -164,3 +167,7 @@ Score is kept not only by rewarding points for right answer selections but by de
 </details>
 
 The Navbar is responsive to the size of the user's device and houses the Light/Dark Theme Switch. By using the browsers Session Storage the selected theme is kept between pages for the duration of the browsing session.
+
+*User stories solved by this feature:*
+
+8 - As a regular user, I want the option to change the current webapp color theme.
