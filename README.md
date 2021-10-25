@@ -184,5 +184,19 @@ The Email Modal makes use of the EmailJS API to give the user the ability to sen
 
 *User stories solved by this feature:*
 
-12. As a site owner, I want to provide the user a way to get in contact.
+12 - As a site owner, I want to provide the user a way to get in contact.
+
+### **Footer**
+
+<details>
+  <summary> (Expand) Footer </summary>
+
+![Footer]()
+</details>
+
+In the footer user can find links the owner social medial.
+
+*User stories solved by this feature:*
+
+13 - As a site owner, I want to showcase my social media.
 
