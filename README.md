@@ -200,3 +200,12 @@ In the footer user can find links the owner social medial.
 
 13 - As a site owner, I want to showcase my social media.
 
+### **404 Page**
+
+<details>
+  <summary> (expand) 404 Error</summary>
+
+![404 Page]main/docs/feature-img/404-page.png)
+</details>
+
+The 404 Error Page is displayed in case of broken or absent links. It provides the user with the ability to go back to one of the webapp pages and maintains user engagement.
