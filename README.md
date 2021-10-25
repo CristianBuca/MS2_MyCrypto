@@ -80,7 +80,7 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 ## **Wireframes**
 
-[Home Page]
+[Landing Page](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/landing_page.png)
 
 [Portfolio]
 
@@ -226,3 +226,23 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[Optimizilla](https://imagecompressor.com)** To optimise images for web applications.
 * **[Favicon.io](https://favicon.io)** For creating the favicon.
 * **[Colormind](http://colormind.io)** Color scheme generator.
+
+## **Testing**
+
+### HTML validation was carried out with W3 Validator.
+
+### CSS validation was carried out with W3 Jigsaw.
+
+### Accessibility Evaluation was carried out with WAVE Web Accessibility Evaluation Tool.
+
+### Performance Tests using Chrome Lighthouse DevTools.
+
+### Devices used for testing: 
+
+* Samsung Galaxy S8,
+* Samsung Tab A 9.7-inch tablet,
+* 17-inch 1080p Laptop (Google Chrome, Mozilla Firefox, Opera, Microsoft Edge browsers),
+* 24-inch 1080p Display (Google Chrome, Mozilla Firefox, Opera, Microsoft Edge browsers),
+* 32-inch 2040p Display (Google Chrome, Mozilla Firefox, Opera, Microsoft Edge browsers).
+
+Application performs as intended on all devices.
