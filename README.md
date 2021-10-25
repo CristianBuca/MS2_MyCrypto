@@ -123,7 +123,34 @@ The Portfolio Page displays all the user's assets in the form of a table. The us
 7 - As a regular user, I want to store my portfolio data.
 9 - As a regular user, I want the ability to edit previous portfolio entries.
 
+### **Quiz**
 
+<details>
+  <summary> (Expand) Quiz Features.</summary>
 
+![Quiz Starting Page]()
+![Quiz Questions]()
+![Quiz End Page]()
+![Quiz Info Modal]()
+</details>
 
+The Quiz Page displays a quiz with crypto-currency related questions. Each question is accompanied by a different picture and the pictures featured are hidden on small devices to maintain focus on the quiz.
+
+The info icon at the top of the quiz triggers the Info Modal when click displaying more information on interacting with the game.
+
+At the bottom of the quiz area, a stopwatch is displayed which is triggered when the user clicks the Start Button and stops when End Screen is displayed. 
+On the opposite side, score is kept based on the correct or wrong answers the user selected.
+
+The user is able to choose multiple answers before going to the next question. Feedback to the user is provided in the form of the buttons changing colors and and extra message being displayed when selecting the correct answer which provides additional information related to the question. 
+
+The choices in the design were made for first time users to maintain engagement with the information in the quiz. The implementation of a stopwatch instead of a countdown timer and by giving the user the ability to keep trying until they select the right answer before moving to the next question, provides the first time user with the chance to learn something new on initial interactions with the game.
+
+For the returning user the stopwatch and the score keeping provides the ability to test previously acquired knowledge and a challenge to beat previous score and completion time. 
+Score is kept not only by rewarding points for right answer selections but by deducting points for wrong answer selections and coupled with the stopwatch feature it adds a variable layer of difficulty and replay value to the game.
+
+*User stories solved by this feature:*
+
+5 - As a new user, I want to learn new information relating to the blockchain.
+6 - As a new user, I want to learn more about the knowledge quiz.
+10 - As a regular user, I want to test the previously acquired knowledge.
 
