@@ -154,3 +154,13 @@ Score is kept not only by rewarding points for right answer selections but by de
 6 - As a new user, I want to learn more about the knowledge quiz.
 10 - As a regular user, I want to test the previously acquired knowledge.
 
+### **Navbar**
+
+<details>
+  <summary> (Expand) Navbar </summary>
+
+![Responsive Navar]()
+![Color Theme Switch]()
+</details>
+
+The Navbar is responsive to the size of the user's device and houses the Light/Dark Theme Switch. By using the browsers Session Storage the selected theme is kept between pages for the duration of the browsing session.
