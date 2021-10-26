@@ -5,6 +5,10 @@
  body {
   background-color: #D8E1E7;
   color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
 } 
 
 .dark {
@@ -25,7 +29,7 @@ section {
 
 /* Class used to center elements vertically and horizontally */
 /* Credit https://stackoverflow.com/a/16299904 */
-.centered {
+centered {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -97,12 +101,25 @@ input:checked[type="checkbox"]:after {
   background-size: cover;
 }
 
+footer {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  padding: 1% 0 1% 5%;
+  justify-content: space-evenly;
+}
+
+footer i {
+  color: #ffc107;
+  font-size: 4rem;
+}
+
 /* Coin badge and dashboard style */
 
-#dashboard {
+/* #dashboard {
   height: 90vh;
   margin: 1rem 0;
-}
+} */
 
 h1 {
   font-size: 2rem;
