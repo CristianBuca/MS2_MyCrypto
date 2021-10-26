@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oxygen:wght@700&family=Ubuntu&display=swap');
 
+/* Global styles */
 
-/* General Color Themes */
  body {
-  background-color: #D8E1E7;
-  color: rgb(0, 0, 0);
+  background-color: var(--bg-clr);
+  color: var(--font-clr);
   display: flex;
   flex-direction: column;
   height: 100vh;
-
 } 
 
+/* Using CSS Variables to be able to change the webapp's color palette */
+/* I follower Fireship's channel on youtube to be able to implement this effectively. Full credit in Readme.md */
+
 .dark {
-  background-color: #2A231F;
-  color: rgb(200, 200, 200);
+  --bg-clr: #2A231F;
+  --font-clr: #D8E1E7;
+  --shadow-clr: #00478F;
 }
 
-/* Global styles */
-
+.light {
+  --bg-clr: #D8E1E7;
+  --font-clr: #2A231F;
+  --shadow-clr: #FF5D00;
+}
 section {
   padding: 0.5rem;
 }
@@ -138,7 +144,7 @@ h1 {
   align-items: end;
   font-family: "Fira Sans";
   padding: .5rem;
-  box-shadow: .25rem .25rem .5rem rgba(0, 0, 0, .5);
+  box-shadow: .25rem .25rem .5rem;
   transition: all .3s;
   cursor: pointer;
 }
@@ -173,7 +179,7 @@ h1 {
   font-size: 1.5rem;
   border-radius: 10px;
   padding: 0 2rem;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .25);
+  box-shadow: 0 .5rem 1rem rgba(--shadow-clr);
 }
 
 #quiz-info {
