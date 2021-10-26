@@ -116,7 +116,7 @@ footer {
 }
 
 footer i {
-  color: #ffc107;
+  color: var(--shadow-clr);
   font-size: 4rem;
 }
 
@@ -138,20 +138,23 @@ h1 {
 }
 
 .coin {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--shadow-clr);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: end;
   font-family: "Fira Sans";
   padding: .5rem;
-  box-shadow: .25rem .25rem .5rem;
+  box-shadow: .25rem .25rem .5rem var(--shadow-clr);
   transition: all .3s;
   cursor: pointer;
 }
 
 .coin:hover {
   transform: scale(1.1) rotate(-3deg);
-  background-color: white;
+  background-color: var(--bg-clr);
 }
 
 .coin-icon {
