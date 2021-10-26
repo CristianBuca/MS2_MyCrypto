@@ -7,7 +7,7 @@
 
 async function getCoins() {
   try {
-      const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false');
+      const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=24&page=1&sparkline=false');
       const data = await res.json();
       buildDashboard(data);
   } catch (error) {
@@ -21,7 +21,7 @@ function buildDashboard(coins) {
 // Credit to StackOverflow for this syntax. More info in Readme.md
     $('#coins-wrapper').append
     ([
-      $('<div/>', { 'class': 'coin col-6 col-md-4 col-lg-2' }).append 
+      $('<div/>', { 'class': 'coin col-6 col-md-4 col-lg-3' }).append 
       ([
         $('<div/>', { 'class': 'coin-icon', css: {'background-image': `url(${coin.image})`} }),
         $('<div/>', { 'class': 'coin-icon hide', css: {'background-image': `url(${coin.image})`} }),
@@ -43,8 +43,8 @@ function buildDashboard(coins) {
  * selection after page reload.
  */
  function switchTheme() {
-  if (sessionStorage.getItem('theme')) {
-    $('body').addClass('dark');
+  if (sessionStorage.getItem('theme') === 'dark') {
+    $('body').toggleClass('light dark');
     $('#theme-switch input').prop('checked', true);
   }
 }
@@ -59,8 +59,8 @@ function extraInfo() {
 // Listens for checkbox state change and toggles theme on body
 // Uses session storage to store theme selection state
 $('#theme-switch').on('change', () => {
-  $('body').toggleClass('dark');
-  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
+  $('body').toggleClass('dark light');
+  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
 // Listens for hovering event on each coin badge and triggers extraInfo function
