@@ -89,6 +89,14 @@ input:checked[type="checkbox"]:after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
 }
 
+.navbar-brand {
+  width: 17.5rem;
+  height: 3rem;
+  background-image: url("/assets/img/my_crypto_logo.png");
+  background-position: center center;
+  background-size: cover;
+}
+
 /* Coin badge and dashboard style */
 
 #dashboard {
