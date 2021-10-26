@@ -51,8 +51,13 @@ I have opted for minimalist design focused on user interactivity. The user has t
 The webapp was designed with a mobile-first approach using BootStrap grid for elements to re-arrange based on screen size. 
 The Navbar was also built using BootStrap and collapses on small devices remaining fixed on top of the screen for easy access to the color theme switcher and links.
 
-### **Colour Scheme**
+### **Colour Palette**
 
+![Nineties Grunge color combination](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/misc/color_palette.png)
+
+Midnight Blue | Red Orange | Ebony | Misty Blue
+--- | --- | --- | ---
+#00478F | #FF5D00 | #2A231F | #D8E1E7
 
 ### **Font Scheme**
 
@@ -246,3 +251,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * 32-inch 2040p Display (Google Chrome, Mozilla Firefox, Opera, Microsoft Edge browsers).
 
 Application performs as intended on all devices.
+
+Credits:
+
+404 Page background image from stockvault.
