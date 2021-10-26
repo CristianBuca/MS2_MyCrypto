@@ -338,7 +338,7 @@ table, th, td {
 #error404 {
   height: 100vh;
   background-color: #0E174F;
-  background-image: url("../img/404_background.jpg");
+  background-image: url("/assets/img/404_background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -347,6 +347,16 @@ table, th, td {
 
 /* Media Queries */
 /* For anything smaller than an ipad the #quiz-image is hidden through Bootstrap and #quiz-card takes the extra space */
+
+@media screen and (max-width: 990px) {
+  .navbar-brand {
+    width: 4rem;
+    height: 3rem;
+    background-image: url("/assets/img/my_crypto_icon.png");
+    background-position: center center;
+    background-size: cover;
+  }
+}
 
 @media screen and (max-width: 767px) {
   #quiz-card {
