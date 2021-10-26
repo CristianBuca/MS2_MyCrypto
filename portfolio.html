@@ -43,17 +43,28 @@
   <div class="title text-center">
     <h1>Keep track of all your assets in one place</h1>
   </div>
-  <section class="container">
-    <h2>Current Portfolio Value</h2>
-    <div id="total">total</div>
-    <div id="asset-input">
-      <label for="coin-select">Add Asset</label>
-      <input list="all-coins" name="coin-select" id="coin-select">
-      <datalist id="all-coins"></datalist>
-      <input type="number" placeholder="Amount" id="inp-value">
-      <button type="button" id="add-asset">Add</button>
-    </div>
-    <div id="portfolio"></div>  
+  <section class="portfolio container">
+    <h3 class="text-center">Current Portfolio Value</h3>
+    <div class="text-center" id="total"></div>
+  </section>
+  <section id="asset-input" class="portfolio container text-center">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <label for="coin-select">Select Asset</label>
+        <input list="all-coins" name="coin-select" id="coin-select">
+        <datalist id="all-coins"></datalist>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <label for="inp-value">Enter amount</label>
+        <input type="number" name="inp-value" placeholder="$0.00" id="inp-value">
+      </div>
+      <div class="col-12 col-lg-4">
+        <button class="quiz-btn" type="button" id="add-asset">Add</button>
+      </div>
+    </div> 
+  </section>
+  <section class="container portfolio">
+    <div id="portfolio"></div> 
   </section>
  
 <!-- Modal Start. Modal was built with Bootstrap component and was styled and modified to suit this site's purpose. -->
