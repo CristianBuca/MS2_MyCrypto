@@ -22,6 +22,7 @@ body {
   color: var(--font-clr);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
 } 
 
@@ -99,7 +100,7 @@ input:checked[type="checkbox"]:after {
 
 footer {
   display: flex;
-  margin-top: auto;
+  /* margin-top: auto; */
   width: 100%;
   padding: 1% 0 1% 5%;
   justify-content: space-evenly;
@@ -107,7 +108,7 @@ footer {
 
 footer i {
   color: var(--shadow-clr);
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 /* Coin badge and dashboard style */
@@ -119,12 +120,6 @@ footer i {
 
 h1 {
   font-size: 2rem;
-}
-
-.title {
-  font-family: "Ubuntu";
-  margin: 5rem 1rem;
-
 }
 
 .coin {
@@ -162,7 +157,7 @@ h1 {
 /* Quiz style */
 
 .quiz-area {
-  margin-top:auto;
+  /* margin-top:auto; */
   border-radius: 10px;
   box-shadow: 0 .5rem 1rem var(--shadow-clr);
 }
@@ -248,7 +243,6 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 35vh;
   margin-top: .5rem;
 }
 
@@ -321,6 +315,13 @@ h1 {
 
 /* Portfolio Styles */
 
+.title {
+  box-shadow: .25rem .25rem .5rem var(--shadow-clr); ;
+  font-family: "Ubuntu";
+  margin-top: 5rem;
+}
+
+
 table {
   width: 100%;
 }
@@ -332,8 +333,8 @@ table, th, td {
 }
 
 .asset-icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   background-position: center center;
   background-size: cover;
 }
@@ -375,7 +376,12 @@ table, th, td {
 
 @media screen and (max-width: 767px) {
   #quiz-card {
-    height: 40vh;
+    height: 50vh;
+  }
+
+  .quiz-area {
+    margin-top: 5vh;
+    height: 80vh;
   }
 
   #quiz-title {
@@ -387,12 +393,8 @@ table, th, td {
     font-size: 0.75rem;
   }
 
-  #quiz-card {
-    font-size: .8rem;
-  }
-
-  #info-modal {
-    font-size: .8rem;
+  #quiz-card, #info-modal {
+    font-size: .7rem;
   }
 }
 
