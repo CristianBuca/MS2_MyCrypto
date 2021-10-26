@@ -39,7 +39,6 @@ async function getCoinList() {
  */
 function removeAsset() {
   var id = $(this).closest('tr').find('.asset-id').html();
-  console.log(id);
   localStorage.removeItem(id);
   $(this).closest('tr').remove();
 }
@@ -89,17 +88,6 @@ async function displayPortfolio() {
             $('<td>', {'class': 'asset-id'}).html(asset.id)
           ])
         ])
-
-        // , .html(`<image src=${asset.image}>`){'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}
-        // ([$('<div/>', {'class': 'asset-wrapper col-12 col-md-6 col-lg-4'}).append
-        //   ([$('<div/>', {'class': 'asset'}).append
-        //     ([$('<div/>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
-        //       $('<div/>').html(asset.name),
-        //       $('<div/>').html(`Current price: ${asset.current_price}`),
-        //       $('<div/>').html(assetWorth),
-        //     ])
-        //   ])
-        // ])
         portfolioTotal += assetWorth;
     })
     $('#total').html(portfolioTotal);
@@ -116,8 +104,8 @@ async function displayPortfolio() {
  * state to last known selection after page reload.
  */
  function switchTheme() {
-  if (sessionStorage.getItem('theme')) {
-    $('body').addClass('dark');
+  if (sessionStorage.getItem('theme') === 'dark') {
+    $('body').toggleClass('light dark');
     $('#theme-switch input').prop('checked', true);
   }
 }
@@ -127,8 +115,8 @@ async function displayPortfolio() {
 // Listens for checkbox state change and toggles theme on body
 // Uses session storage to store theme selection state
 $('#theme-switch').on('change', () => {
-  $('body').toggleClass('dark');
-  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
+  $('body').toggleClass('dark light');
+  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
 $('#add-asset').on('click', storeAsset);
