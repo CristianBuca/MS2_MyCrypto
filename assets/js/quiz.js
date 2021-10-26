@@ -101,8 +101,8 @@ function showResults() {
  */
 
 function switchTheme() {
-  if (sessionStorage.getItem('theme')) {
-    $('body').addClass('dark');
+  if (sessionStorage.getItem('theme') === 'dark') {
+    $('body').toggleClass('light dark');
     $('#theme-switch input').prop('checked', true);
   }
 }
@@ -146,8 +146,8 @@ $('#modal-close').on('click', () => $('#info-modal-container').css({'opacity' : 
 // Listens for checkbox state change and toggles theme on body
 // Uses session storage to store theme selection state
 $('#theme-switch').on('change', () => {
-  $('body').toggleClass('dark');
-  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.removeItem('theme');
+  $('body').toggleClass('dark light');
+  $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
 switchTheme();
