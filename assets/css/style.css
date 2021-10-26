@@ -2,14 +2,6 @@
 
 /* Global styles */
 
- body {
-  background-color: var(--bg-clr);
-  color: var(--font-clr);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-} 
-
 /* Using CSS Variables to be able to change the webapp's color palette */
 /* I follower Fireship's channel on youtube to be able to implement this effectively. Full credit in Readme.md */
 
@@ -24,6 +16,15 @@
   --font-clr: #2A231F;
   --shadow-clr: #FF5D00;
 }
+
+body {
+  background-color: var(--bg-clr);
+  color: var(--font-clr);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} 
+
 section {
   padding: 0.5rem;
 }
@@ -161,31 +162,28 @@ h1 {
 /* Quiz style */
 
 .quiz-area {
-  margin-top: 1rem;
+  margin-top:auto;
   border-radius: 10px;
-  box-shadow: 0 .5rem 1rem #FF5D00;
+  box-shadow: 0 .5rem 1rem var(--shadow-clr);
 }
 
 #quiz-title {
+  display: flex;
+  align-items:center;
+  justify-content: center;
   font-family: 'Ubuntu';
   font-size: 1.5rem;
   border-radius: 10px;
   padding: 0 2rem;
-  box-shadow: 0 .5rem 1rem rgba(--shadow-clr);
+  box-shadow: 0 .5rem 1rem var(--shadow-clr);
 }
 
 #quiz-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  top: .8rem;
-  right: 1rem;
   font-size: 1.5rem;
   margin-left: 1rem;
   padding: .5rem;
   border-radius: 30px;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+  box-shadow: 0 .5rem 1rem var(--shadow-clr);
   transition: transform .5s ease-in-out;
 }
 
@@ -198,7 +196,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background:rgba(0, 0, 0, .4);
+  background:rgba(0, 0, 0, .6);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -274,7 +272,7 @@ h1 {
 
 #valid {
   margin-top: 1rem;
-  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .25);
+  box-shadow: .5rem .5rem 1rem var(--shadow-clr);
 }
 
 /* Quiz button style inspired from https://getcssscan.com/css-buttons-examples button 33 */
@@ -285,7 +283,7 @@ h1 {
   width: 90%;
   margin: 0.25rem 5%;
   border-radius: 10px;
-  box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .25);
+  box-shadow: 0 .5rem .5rem var(--shadow-clr);
   cursor: pointer;
   transition: all 150ms;
   font-weight: 600;
@@ -295,7 +293,7 @@ h1 {
 }
 
 .quiz-btn:hover {
-  box-shadow: rgba(0, 0 ,0, .35) 0 -.5rem .5rem inset, rgba(0, 0, 0, .35) 0 .25rem .25rem;
+  box-shadow: rgba(0, 0 ,0, .35) 0 -.5rem .5rem inset, var(--shadow-clr) 0 .25rem .25rem;
   transform: scale(1.05) rotate(-1deg);
 }
 
@@ -310,12 +308,14 @@ h1 {
 }
 
 .correct {
-  background-color: rgb(20, 150, 5, 0.800);
-  box-shadow: 0 .25rem .5rem rgb(20, 150, 5);
+  background-color: #00478F;
+  color: #D8E1E7;
+  box-shadow: 0 .25rem .5rem #00478F;
 }
 
 .wrong {
   background-color: #FF5D00;
+  color: #2A231F;
   box-shadow: 0 .25rem .5rem #FF5D00;
 }
 
@@ -375,7 +375,7 @@ table, th, td {
 
 @media screen and (max-width: 767px) {
   #quiz-card {
-    height: 60vh;
+    height: 40vh;
   }
 
   #quiz-title {
