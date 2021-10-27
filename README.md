@@ -87,9 +87,9 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 [Landing Page](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/landing_page.png)
 
-[Portfolio](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/portfolio_page.png)
-
 [Quiz](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/crypto_quiz.png)
+
+[Portfolio](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/portfolio_page.png)
 
 [Email Modal](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/email_modal.png)
 
@@ -110,24 +110,6 @@ The Landing Page features a grid displaying major crypto-currencies and their cu
 
 * 1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
 
-### **Portfolio**
-
-<details>
-  <summary> (Expand) Portfolio showcase.</summary>
-
-![Portfolio Table]()
-</details>
-
-The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. The asset is added to the portfolio and displayed with the current market price and a calculation of how much the user's holdings are valued at, both individually and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
-
-*User stories solved by this feature:*
-
-* 2 - As a new user, I want to add personal crypto-currency assets.
-* 3 - As a new user, I want to see the asset valuation.
-* 4 - As a new user, I want to see the total portfolio valuation.
-* 7 - As a regular user, I want to store my portfolio data.
-* 9 - As a regular user, I want the ability to edit previous portfolio entries.
-
 ### **Quiz**
 
 <details>
@@ -141,7 +123,7 @@ The Portfolio Page displays all the user's assets in the form of a table. The us
 
 The Quiz Page displays a quiz with crypto-currency related questions. Each question is accompanied by a different picture and the pictures featured are hidden on small devices to maintain focus on the quiz.
 
-The info icon at the top of the quiz triggers the Info Modal when click displaying more information on interacting with the game.
+The info icon at the top of the quiz triggers the Info Modal when clicked, displaying more information on interacting with the game.
 
 At the bottom of the quiz area, a stopwatch is displayed which is triggered when the user clicks the Start Button and stops when End Screen is displayed. 
 On the opposite side, score is kept based on the correct or wrong answers the user selected.
@@ -151,9 +133,9 @@ The user is able to choose multiple answers before going to the next question. F
 The choices in the design were made for first time users to maintain engagement with the information in the quiz. The implementation of a stopwatch instead of a countdown timer and by giving the user the ability to keep trying until they select the right answer before moving to the next question, provides the first time user with the chance to learn something new on initial interactions with the game.
 
 For the returning user the stopwatch and the score keeping provides the ability to test previously acquired knowledge and a challenge to beat previous score and completion time. 
-Score is kept not only by rewarding points for right answer selections but by deducting points for wrong answer selections and coupled with the stopwatch feature it adds a variable layer of difficulty and replay value to the game.
+Score is kept not only by rewarding points for right answer selections but by deducting points for wrong answers. Coupled with the stopwatch feature it adds a variable layer of difficulty and replay value to the game.
 
-The quiz is built to be versatile and easy to update. By loading the questions from a separate file in JSON format the site owner is able to easily change or update game. The quiz script is able to adapt to variable number of questions as the HTML is dynamically generated trough JavaScript.
+The quiz is built to be versatile and easy to update. By loading the questions from a separate file in JSON format the site owner is able to easily change or update game. The quiz is able to adapt to variable number of questions as the HTML is dynamically generated through JavaScript.
 
 *User stories solved by this feature:*
 
@@ -161,6 +143,33 @@ The quiz is built to be versatile and easy to update. By loading the questions f
 * 6 - As a new user, I want to learn more about the knowledge quiz.
 * 10 - As a regular user, I want to test the previously acquired knowledge.
 * 11 - As a site owner, I want the knowledge quiz to be versatile and easy to update.
+
+### **Portfolio**
+
+<details>
+  <summary> (Expand) Portfolio showcase.</summary>
+
+![Portfolio Table]()
+</details>
+
+The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. The asset is added to the portfolio and displayed with the current market price along with a calculation of how much the user's holdings are valued at. Valuations are made both individually per asset and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
+
+This page makes heavy use of the [CoinGeko API](https://www.coingecko.com/en/api). When the user inputs a cryptocurrency name, symbol or just manually selects it from the searchable dropdown list, a check is made against the list fetched from the API and if a match is found then the asset ID is stored in LocalStorage as a key and the asset amount input is stored as the value. This allows the user to keep their portfolio data on their own computer.
+Due to the large number of cryptocurrencies (over 9000!!!) different endpoints need to be called for the input list and the market list which displays much more detailed information on each cryptocurrency.
+The keys and values from LocalStorage are converted to JSON format and based on the IDs a custom link is generated when calling the API market list endpoint and only the coins selected by the user are being fetched.
+Information is then dynamically displayed in the form of a table and asset value is calculated on each API call based on the key value provided by the user and stored in LocalStorage.
+
+To update de asset list the user only has to input the same coin with different value.
+To remove an asset completely the user can click the rubbish bin at the end of the asset's row.
+
+
+*User stories solved by this feature:*
+
+* 2 - As a new user, I want to add personal crypto-currency assets.
+* 3 - As a new user, I want to see the asset valuation.
+* 4 - As a new user, I want to see the total portfolio valuation.
+* 7 - As a regular user, I want to store my portfolio data.
+* 9 - As a regular user, I want the ability to edit previous portfolio entries.
 
 ### **Navbar**
 
@@ -230,7 +239,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
 * **[Optimizilla](https://imagecompressor.com)** To optimise images for web applications.
 * **[Favicon.io](https://favicon.io)** For creating the favicon.
-* **[Colormind](http://colormind.io)** Color scheme generator.
+* **[Canva.com](https://www.canva.como)** Color scheme generator.
 
 ## **Testing**
 
