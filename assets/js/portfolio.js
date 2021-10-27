@@ -81,16 +81,16 @@ async function displayPortfolio() {
         ([$('<tr>').append
           ([$('<td>', {'class': 'asset-icon', css: {'background-image': `url(${asset.image})`}}),
             $('<td>').html(asset.name),
-            $('<td>').html(asset.current_price.toFixed(3)),
+            $('<td>').html(`$${asset.current_price.toFixed(3)}`),
             $('<td>').html(match.amount),
-            $('<td>').html(assetWorth.toFixed(3)),
+            $('<td>').html(`$${assetWorth.toFixed(3)}`),
             $('<td>', {'class': 'remove-asset'}).html('<i class="fas fa-trash-alt"></i>'),
             $('<td>', {'class': 'asset-id'}).html(asset.id)
           ])
         ])
         portfolioTotal += assetWorth;
     })
-    $('#total').html(portfolioTotal);
+    $('#total').html(`$${portfolioTotal.toFixed(3)}`);
   }
   catch(e) {
     console.error(e);
