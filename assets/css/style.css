@@ -26,6 +26,9 @@ body {
   height: 100vh;
 } 
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu";
+}
 section {
   padding: 0.5rem;
 }
@@ -90,6 +93,10 @@ input:checked[type="checkbox"]:after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
 }
 
+label {
+  font-weight: bold;
+}
+
 .navbar-brand {
   width: 17.5rem;
   height: 3rem;
@@ -112,11 +119,6 @@ footer i {
 }
 
 /* Coin badge and dashboard style */
-
-/* #dashboard {
-  height: 90vh;
-  margin: 1rem 0;
-} */
 
 h1 {
   font-size: 2rem;
@@ -317,30 +319,54 @@ h1 {
 
 .title {
   box-shadow: .25rem .25rem .5rem var(--shadow-clr); ;
-  font-family: "Ubuntu";
-  margin-top: 5rem;
+  margin: 5rem auto 2rem;
 }
 
+#total {
+  font-size: 200%;
+  font-weight: bold;
+  color: #FF5D00;
+}
 
 table {
   width: 100%;
+  margin-top: 2rem;
 }
 
 table, th, td {
-  border-top: 1px solid black;
+  border-top: 1px solid var(--shadow-clr);
   vertical-align: middle;
   text-align: center;
+  font-family: "Fira Sans";
 }
 
+td:nth-child(even) {
+  background-color: #ff5e0067;
+}
+
+td:nth-child(odd) {
+  background-color: #00488f67;
+}
+
+
 .asset-icon {
-  width: 30px;
-  height: 30px;
+  width: 4rem;
+  height: 4rem;
   background-position: center center;
   background-size: cover;
 }
 
 .asset-id {
   font-size: 0;
+}
+
+.remove-asset {
+  color: #FF5D00;
+}
+
+.remove-asset:hover {
+  transform: scale(2);
+  cursor: pointer;
 }
 
 /* 404 Page */
@@ -380,7 +406,7 @@ table, th, td {
   }
 
   .quiz-area {
-    margin-top: 5vh;
+    margin-top: 2rem;
     height: 80vh;
   }
 
@@ -395,6 +421,15 @@ table, th, td {
 
   #quiz-card, #info-modal {
     font-size: .7rem;
+  }
+
+  .asset-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  table {
+    font-size: 70%;
   }
 }
 
