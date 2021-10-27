@@ -29,7 +29,7 @@ function displayQuestion() {
   answers.forEach(choice => {
     $(`<button class="answer quiz-btn">${choice}</button>`).appendTo('#quiz-answers');
   });
-  $('#quiz-image').css('background-image', `url("/assets/img/quiz-img/quiz-${quizIndex + 1}-min.jpg")`);
+  $('#quiz-image').css('background-image', `url("../img/quiz-img/quiz-${quizIndex + 1}-min.jpg")`);
   ++ quizIndex;
 }
 

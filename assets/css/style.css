@@ -242,7 +242,7 @@ span {
 }
 
 #quiz-image {
-  background-image: url("/assets/img/quiz-img/quiz-start-min.jpg");
+  background-image: url("../img/quiz-img/quiz-start-min.jpg");
   border-radius: 5px;
   background-position: center center;
   background-size: cover;
