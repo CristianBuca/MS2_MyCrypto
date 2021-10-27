@@ -232,6 +232,15 @@ h1 {
   cursor: pointer;
 }
 
+#info-modal ul {
+  margin: 1rem;
+  padding: 0;
+}
+
+span {
+  border-radius: 5px;;
+}
+
 #quiz-image {
   background-image: url("/assets/img/quiz-start.jpg");
   border-radius: 5px;
