@@ -242,7 +242,7 @@ span {
 }
 
 #quiz-image {
-  background-image: url("/assets/img/quiz-start.jpg");
+  background-image: url("/assets/img/quiz-img/quiz-start-min.jpg");
   border-radius: 5px;
   background-position: center center;
   background-size: cover;
@@ -350,11 +350,11 @@ table, th, td {
 }
 
 td:nth-child(even) {
-  background-color: #ff5e0067;
+  background-color: #ff5e0015;
 }
 
 td:nth-child(odd) {
-  background-color: #00488f67;
+  background-color: #00488f15;
 }
 
 
