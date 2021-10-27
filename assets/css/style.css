@@ -23,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90vh;
+  height: 100vh;
 } 
 
 h1, h2, h3, h4, h5, h6 {
@@ -100,7 +100,7 @@ label {
 .navbar-brand {
   width: 17.5rem;
   height: 3rem;
-  background-image: url("/assets/img/icons/logo/my_crypto_logo.png");
+  background-image: url("assets/img/icons/logo/my_crypto_logo.png");
   background-position: center center;
   background-size: cover;
 }
