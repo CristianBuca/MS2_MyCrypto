@@ -383,13 +383,14 @@ td:nth-child(odd) {
 .overlay404 {
   height: 30vh;
   top: 50vh;
+  padding: 0;
   background-color: rgba(0, 0, 0, 0.75);
   color:#D8E1E7;
 }
 
 #error404 {
-  height: 90vh;
-  /* width: 100%; */
+  width: 100vw;
+  height: 100vh;
   background-color: #0E174F;
   background-image: url("../img/404-background-min.jpg");
   background-repeat: no-repeat;
