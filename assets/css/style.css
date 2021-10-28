@@ -289,7 +289,7 @@ span {
   width: 90%;
   margin: 0.25rem 5%;
   border-radius: 10px;
-  box-shadow: 0 .5rem .5rem var(--shadow-clr);
+  box-shadow: 0 .25rem .5rem var(--shadow-clr);
   cursor: pointer;
   transition: all 150ms;
   font-weight: 600;
@@ -314,7 +314,6 @@ span {
 }
 
 #timer, #score {
-  /* font-size: 1.5rem; */
   font-weight: bold;
   text-align: center;
 }
@@ -331,17 +330,29 @@ span {
   box-shadow: 0 .25rem .5rem #FF5D00;
 }
 
+.results {
+  font-size: 1rem;
+}
 /* Portfolio Styles */
 
 .title {
   box-shadow: .25rem .25rem .5rem var(--shadow-clr); ;
-  margin: 5rem auto 2rem;
+  margin: 5rem auto;
 }
 
 #total {
   font-size: 200%;
   font-weight: bold;
   color: #FF5D00;
+}
+
+#coin-select, #inp-value {
+  box-shadow: .25rem .25rem .5rem var(--shadow-clr);
+  background-color: #D8E1E7;
+}
+
+#add-asset {
+  border-radius: 0;
 }
 
 table {
@@ -380,7 +391,7 @@ td:nth-child(odd) {
   color: #FF5D00;
 }
 
-.remove-asset:hover {
+.remove-asset i:hover {
   transform: scale(2);
   cursor: pointer;
 }
