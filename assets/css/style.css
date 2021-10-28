@@ -262,6 +262,7 @@ span {
   margin-bottom: .5rem;
   font-family: "Oxygen";
   text-align: center;
+  font-weight: bold;
 }
 
 #quiz-answers {
@@ -310,6 +311,12 @@ span {
   margin: .5rem;
   height: 10vh;
   border-radius: 10px;
+}
+
+#timer, #score {
+  /* font-size: 1.5rem; */
+  font-weight: bold;
+  text-align: center;
 }
 
 .correct {
@@ -441,7 +448,7 @@ td:nth-child(odd) {
     font-size: 0.75rem;
   }
 
-  #quiz-card, #info-modal {
+  #quiz-answers, #info-modal {
     font-size: .7rem;
   }
 

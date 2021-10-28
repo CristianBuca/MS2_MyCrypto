@@ -49,7 +49,7 @@ function checkAnswer() {
     $(this).addClass('wrong');
     quizScore -=2;
   }
-  $('#score').text(`Score: ${quizScore}`);
+  $('#score').text(`Points: ${quizScore}`);
 }
 
 /**
@@ -71,7 +71,7 @@ function timer() {
     if (secs >= 60) secs %= 60;
     var ms = elapsedTime;
     if (ms >= 1000) ms %= 1000;
-    $('#timer').text(`Elapsed time: ${mins} - ${secs} - ${ms}`);
+    $('#timer').text(`${mins} : ${secs} : ${ms}`);
   }, 10)
 }
 
@@ -86,9 +86,11 @@ function showResults() {
   clearInterval(interval);
   $('#quiz-question').text('Well done! You finished the quiz');
   $('#quiz-answers').html(`
-  <p class="results"> Your completion time was ${elapsedTime / 1000}<sub>seconds</sub>
+  <p class="results"> You completed the quiz in: ${elapsedTime / 1000}<sub>seconds</sub>
   </br>
-  <p class="results"> Your total score is ${quizScore}`);
+  <p class="results">with a score of: ${quizScore}points</p>
+  </br>
+  <p class="results"> Think you can do better next time?</p>`);
   $('#timer, #score').text('');
   $('#quiz-results').addClass('hide');
   $('#quiz-restart').removeClass('hide');
