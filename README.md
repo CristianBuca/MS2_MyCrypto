@@ -267,7 +267,11 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
 * **[Optimizilla](https://imagecompressor.com)** To optimize images for web applications.
 * **[Favicon.io](https://favicon.io)** For creating the favicon.
-* **[Canva.com](https://www.canva.como)** Color scheme generator.
+* **[Canva.com](https://www.canva.com)** Color scheme generator.
+* **[Namecheap.com](https://www.namecheap.com/logo-maker/app/new)** For creating the logo.
+* **[EmailJs API](https://www.emailjs.com)** Is used to enable email exchange from the webapp.
+* **[CoinGeko API](https://www.coingecko.com/en/api)** Is used to fetch cryptocurrency information.
+
 
 ## **Testing**
 
@@ -279,7 +283,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ### Performance Tests using Chrome Lighthouse DevTools.
 
-### Devices used for testing: 
+### Devices used for physical testing: 
 
 * Samsung Galaxy S8,
 * Samsung Tab A 9.7-inch tablet,
