@@ -1,6 +1,38 @@
 # **My Crypto**
 
-## **You can find the deployed website**
+- [**My Crypto**](#--my-crypto--)
+- [**User Experience**](#--user-experience--)
+- [**Strategy**](#--strategy--)
+  * [**Project Goals**](#--project-goals--)
+  * [**User Goals**](#--user-goals--)
+  * [**User Stories**](#--user-stories--)
+  * [**Design**](#--design--)
+    + [**Colour Palette**](#--colour-palette--)
+    + [**Font Scheme**](#--font-scheme--)
+- [**Scope**](#--scope--)
+  * [Feature requirements:](#feature-requirements-)
+- [**Structure**](#--structure--)
+  * [**Wireframes**](#--wireframes--)
+  * [**Features**](#--features--)
+    + [**Landing Page**](#--landing-page--)
+    + [**Quiz**](#--quiz--)
+    + [**Portfolio**](#--portfolio--)
+    + [**Navbar**](#--navbar--)
+    + [**Email Modal**](#--email-modal--)
+    + [**Footer**](#--footer--)
+    + [**404 Page**](#--404-page--)
+  * [**Technologies Used**](#--technologies-used--)
+  * [**Testing**](#--testing--)
+    + [HTML validation was carried out with W3 Validator.](#html-validation-was-carried-out-with-w3-validator)
+    + [CSS validation was carried out with W3 Jigsaw.](#css-validation-was-carried-out-with-w3-jigsaw)
+    + [Accessibility Evaluation was carried out with WAVE Web Accessibility Evaluation Tool.](#accessibility-evaluation-was-carried-out-with-wave-web-accessibility-evaluation-tool)
+    + [Performance Tests using Chrome Lighthouse DevTools.](#performance-tests-using-chrome-lighthouse-devtools)
+    + [Devices used for testing:](#devices-used-for-testing-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+## **You can find the deployed website** [**HERE**](https://cristianbuca.github.io/MS2_MyCrypto/)
 
 # **User Experience**
 
@@ -105,6 +137,7 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 </details>
 
 The Landing Page features a grid displaying major crypto-currencies and their current prices. Currencies are organized by market capitalization in descending order. Each currency is displayed in it's own badge that the user can interact with by mouse hover (or tap on touch devices), to access 24-hour high and low prices.
+All the data displayed is generated dynamically through JavaScript and the [CoinGeko API](https://www.coingecko.com/en/api).
 
 *User stories solved by this feature:*
 
@@ -208,7 +241,7 @@ The Email Modal makes use of the EmailJS API to give the user the ability to sen
 ![Footer]()
 </details>
 
-In the footer user can find links the owner social medial.
+In the footer, the user can find links the owner social medial.
 
 *User stories solved by this feature:*
 
@@ -219,7 +252,7 @@ In the footer user can find links the owner social medial.
 <details>
   <summary> (expand) 404 Error</summary>
 
-![404 Page]main/docs/feature-img/404-page.png)
+![404 Page]()
 </details>
 
 The 404 Error Page is displayed in case of broken or absent links. It provides the user with the ability to go back to one of the webapp pages and maintains user engagement.
@@ -237,7 +270,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[VSCode](https://code.visualstudio.com)** IDE for writing code.
 * **[Font Awesome](https://fontawesome.com)** Provided the icons for social media links.
 * **[Google Fonts](https://fonts.google.com)** Ubuntu, Oxygen and Fira Sans font families were used as default fonts for the web application.
-* **[Optimizilla](https://imagecompressor.com)** To optimise images for web applications.
+* **[Optimizilla](https://imagecompressor.com)** To optimize images for web applications.
 * **[Favicon.io](https://favicon.io)** For creating the favicon.
 * **[Canva.com](https://www.canva.como)** Color scheme generator.
 
@@ -263,4 +296,4 @@ Application performs as intended on all devices.
 
 Credits:
 
-404 Page background image from stockvault.
+404 Page background image from [Stockvault](https://www.stockvault.net).
