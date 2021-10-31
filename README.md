@@ -324,7 +324,25 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 
 ## **Credits**
 
-404 Page background image from [Stockvault](https://www.stockvault.net).
+_I have followed dozens of projects and video tutorials trying to find the solutions that would fit this project.
+Some influenced my approach on how to build this site and others were specific to a particular issue I encountered.
+Any code that was borrowed has been modified and adapted to fit my particular needs._
+
+**JavaScript/Jquery code:**
+
+
+
+**HTML/CSS**
+
+* Using CSS Variables [Fireship](https://www.youtube.com/watch?v=NtRmIp4eMjs).
+* CSS style for the Theme Switch checkbox was taken from [Online Tutorials](https://www.youtube.com/watch?v=z3TgmTi42ic).
+* For the Quiz Info Modal I watched [Florin Pop](https://www.youtube.com/watch?v=XH5OW46yO8I).
+* CSS for the custom buttons was inspired from [CSS Scan](https://getcssscan.com/css-buttons-examples).
+* The pop-up in the e-mail form for invalid entries was taken from [W3 Schools](https://www.w3schools.com/howto/howto_js_popup.asp) in combination with [PreTagTeam](https://pretagteam.com/question/jquery-position-popup-in-relative-to-buttons) for positioning it on each input.
+
+**Media**
+
+* 404 Page background image from [Stockvault](https://www.stockvault.net).
 
 ### **Code Institute colleagues who's work I followed for guidance:**
 
