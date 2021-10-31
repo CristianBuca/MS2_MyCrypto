@@ -3,8 +3,6 @@
 // Quiz control buttons into global variables
 const quizStart = $('#quiz-start');
 const quizNext = $('#quiz-next');
-const quizResults = $('#quiz-results');
-const quizRestart = $('#quiz-restart');
 
 var quizIndex = 0;
 var quizScore = 0;
@@ -14,7 +12,7 @@ var elapsedTime;
 // Functions
 
 /**
-* Function to display next question which will be used by event listeners for Start Game and Next Question buttons
+* Function to display next question which will be used by event listeners for Start Game and Next Question buttons.
 * Clear previous data from quiz card
 * Add question text to the "quiz-question" div
 * Take answers for current question from the questions.choices array and assign them to a new array
@@ -26,18 +24,20 @@ function displayQuestion() {
   $('#quiz-answers').text('');
   $('#quiz-question').text(questions[quizIndex].question);
   let answers = questions[quizIndex].choices;
-  answers.forEach(choice => {
-    $(`<button class="answer quiz-btn">${choice}</button>`).appendTo('#quiz-answers');
-  });
+
+// For Loop to iterate through the the answer choices array
+  for (let i = 0; i < answers.length; i++) {
+    $(`<button class="answer quiz-btn">${answers[i]}</button>`).appendTo('#quiz-answers');
+  };
   $('#quiz-image').css('background-image', `url("assets/img/quiz-img/quiz-${quizIndex + 1}-min.jpg")`);
   ++ quizIndex;
 }
 
 /** 
- * Function to check if selected answer is correct
- * Checks if text on the clicked button matches the text in the question object with the "correct" key
- * Validates the answer by changing the button's appearance
- * If correct, an extra paragraph is appended with validation text from the question object with "validation" key
+ * Function to check if selected answer is correct.
+ * Checks if text on the clicked button matches the text in the question object with the "correct" key.
+ * Validates the answer by changing the button's appearance.
+ * If correct, an extra paragraph is appended with validation text from the question object with "validation" key.
  */
 
 function checkAnswer() {
@@ -53,13 +53,13 @@ function checkAnswer() {
 }
 
 /**
- * Function to keep track and display elapsed time since the start of the quiz
+ * Function to keep track and display elapsed time since the start of the quiz. 
  * On a 10ms interval it calculates the difference between the current date and the date the function was called.
- * parseInt is used to display minutes and seconds as whole numbers
- * Conditions are use to check when each division reaches the next time unit and modulo operation assures they reset to 0
+ * parseInt is used to display minutes and seconds as whole numbers.
+ * Conditional statements are used to check when each division reaches the next time unit and modulo operation assures they reset to 0.
+ * 
+ * Credit: This function is based on the Crypters Infotech Online Stopwatch tutorial. Full credit in Readme.md
  */
-
-//  This function is based on the Crypters Infotech Online Stopwatch tutorial. Full credit in Readme.md
 
 function timer() {
   var startTime = Date.now();
@@ -76,10 +76,10 @@ function timer() {
 }
 
 /**
- * Function to show results screen once the user went through all the questions
- * Stops the timer
- * Clears the last question data from the screen and displays the completion time and final score
- * Hides the Show Results button and displays the Try Again button
+ * Function to show results screen once the user went through all the questions.
+ * Stops the timer.
+ * Clears the last question data from the screen and displays the completion time and final score.
+ * Hides the Show Results button and displays the Try Again button.
  */
 
 function showResults() {
@@ -88,7 +88,7 @@ function showResults() {
   $('#quiz-answers').html(`
   <p class="results"> You completed the quiz in: ${elapsedTime / 1000}<sub>seconds</sub>
   </br>
-  <p class="results">with a score of: ${quizScore}points</p>
+  <p class="results">with a score of: ${quizScore} points</p>
   </br>
   <p class="results"> Think you can do better next time?</p>`);
   $('#timer, #score').text('');
@@ -121,6 +121,7 @@ quizStart.on('click', function() {
   quizNext.removeClass('hide');
   timer();
 });
+
 
 // Listens for the Next Question button click and based on the current questionIndex
 // Displays the next question if available or reveals the show Show Results button to end game
