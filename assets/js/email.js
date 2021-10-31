@@ -1,17 +1,26 @@
 /* jshint esversion: 8 */
 
-// Credit for email validation expression: https://stackoverflow.com/a/9204568
-function validateEmail(email) {
-	var em = /\S+@\S+\.\S+/;
-	return em.test(email);
-}
-
+/**
+ * Checks in a conditional loop if the form input fields are filled before calling @function sendMail()
+*/
 function validateForm() {
 	if ($('#userName').val() === '') popUp($('#userName'));
 		else if (!validateEmail($('#email').val())) popUp($('#email'));
 			else if ($('#message').val() === '') popUp($('#message'));
 				else sendMail();
 	return false; //to prevent the page from refreshing when submitting the form
+}
+
+/**
+ * Checks an email address input for correct syntax.
+ * Credit for email validation expression: https://stackoverflow.com/a/9204568
+ * @param email [The email that is checked].
+ * @returns [boolean value].
+ */
+
+function validateEmail(email) {
+	var em = /\S+@\S+\.\S+/;
+	return em.test(email);
 }
 
 // Credit to Code Institute lesson "Sending Emails Using EmailJS"
@@ -37,6 +46,10 @@ function sendMail() {
   );
 }
 
+/**
+ * Function to deploy a pop-up message
+ * @param element [the input triggering this function]
+ */
 function popUp(element) {
 	$("#invalidEntry").addClass('show').css('top', (element.position().top - 40) + 'px').text('Invalid entry');
 }
