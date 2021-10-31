@@ -8,10 +8,10 @@ function validateEmail(email) {
 
 function validateForm() {
 	if ($('#userName').val() === '') popUp($('#userName'));
-		else if (!validateEmail($('#email').val())) console.log('error e');
-			else if ($('#message').val() === '') console.log('error m');
+		else if (!validateEmail($('#email').val())) popUp($('#email'));
+			else if ($('#message').val() === '') popUp($('#message'));
 				else sendMail();
-	return false;
+	return false; //to prevent the page from refreshing when submitting the form
 }
 
 // Credit to Code Institute lesson "Sending Emails Using EmailJS"
@@ -26,6 +26,8 @@ function sendMail() {
   .then(
       function(response) {
           alert('Message Sent');
+					$('#invalidEntry').removeClass('show');
+					$('#contact-modal').modal('hide');
           console.log('Message Sent', response);
       },
       function(error) {
@@ -33,5 +35,8 @@ function sendMail() {
           console.log('Failed', error);
       }
   );
-  return false; //to prevent the page from refreshing when submitting the form
+}
+
+function popUp(element) {
+	$("#invalidEntry").addClass('show').css('top', (element.position().top - 40) + 'px').text('Invalid entry');
 }
