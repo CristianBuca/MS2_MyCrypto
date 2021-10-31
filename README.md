@@ -293,6 +293,25 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 Application performs as intended on all devices.
 
+## **Testing of User Stories**
+
+## **Bugs**
+
+## **Deployment**
+
+The website is hosted and deployed from Github. The steps taken for deployment were:
+
+1. Logged into my [Github](https://github.com) account,
+2. Selected the [Repository](https://github.com/CristianBuca/The-Aunans),
+3. Go to [Settings](https://github.com/CristianBuca/The-Aunans/settings),tab on the horizontal menu,
+4. Go to [Pages](https://github.com/CristianBuca/The-Aunans/settings/pages) tab on the vertical sub-menu,
+5. Selected the **Main Branch** from the drop-down menu under **Source**,
+6. Selected the **/(root)** folder where my **index.html** was located,
+7. Clicked **Save**,
+8. Once the page was refreshed I was presented with the link to the live website as seen in the image below:
+
+![Published site]()
+
 Credits:
 
 404 Page background image from [Stockvault](https://www.stockvault.net).
