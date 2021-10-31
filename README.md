@@ -312,6 +312,16 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 
 ![Published site]()
 
+**Steps to follow for cloning this repository:**
+
+1. Log into your [Github](https://github.com) account,
+2. Select the [Repository](https://github.com/CristianBuca/The-Aunans),
+3. Click on the drop-down menu title **Code** on the top right of the repository file tree,
+4. Copy the HTTPS address,
+5. In your Git Bash Terminal type *"git clone"* then paste the address.
+
+*Alternatively you can download the repository as ZIP or use [Github Desktop](https://desktop.github.com) to ge the repository on you local machine*
+
 Credits:
 
 404 Page background image from [Stockvault](https://www.stockvault.net).
