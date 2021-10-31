@@ -322,6 +322,25 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 
 *Alternatively you can download the repository as ZIP or use [Github Desktop](https://desktop.github.com) to ge the repository on you local machine*
 
-Credits:
+## **Credits**
 
 404 Page background image from [Stockvault](https://www.stockvault.net).
+
+### **Code Institute colleagues who's work I followed for guidance:**
+
+[Paul Meeneghan](https://github.com/pmeeny/CI-MS2-BicepMusicFanSite).
+
+[Tara Rhoseyn](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame).
+
+## **Acknowledgements**
+
+* Special thanks to my mentor Mo Shami for his suggestions and guidance.
+* My family for their encouragement and support.
+* Special thanks to Neil from Student Care for helping me through a tough time and everyone else in the Student Care Team that touched bases making sure I am on track.
+* The Code Institute team for all the effort and energy they put into creating and curating the content for this programme.
+
+## Disclaimer
+
+_This project is for educational use only and was created as a Milestone Project for the Code Institute Module of Interactive Frontend Development_
+
+Developed by Cristian Buca
