@@ -1,5 +1,5 @@
 
-// Each question object is structured with keys for question text, array with answer choices, 
+// Each question object is structured with keys for: question text, array with answer choices, 
 // correct choice and extra validation message for correct choice.
 
 const questions = [
@@ -7,7 +7,7 @@ const questions = [
     question: "Which mining algorithm does Monero use?",
     choices: ["CryptoNight", "RandomX", "SHA-256"],
     correct: "RandomX",
-    validation: "Monero upgraded to RandomX, a new mining algorithm that claims to be ASIC-resistant, at the start of Decemeber 2019.",
+    validation: "Monero upgraded to RandomX, a new mining algorithm that claims to be ASIC-resistant, at the start of December 2019.",
   },
   {
     question: "Which tokens are traded on crypto exchanges?",
