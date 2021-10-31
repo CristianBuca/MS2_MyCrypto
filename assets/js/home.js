@@ -1,10 +1,10 @@
-// Global variables
-// var data = [];
-
 // Functions
 
-// Async function to retrieve coin data from coingecko
-
+/**
+ * Async function to retrieve coin data from Coingeko API.
+ * The response is converted in JSON format and passed as a parameter
+ * when calling @function buildDashboard().
+ */
 async function getCoins() {
   try {
       const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=24&page=1&sparkline=false');
@@ -15,9 +15,15 @@ async function getCoins() {
   }
 }
 
-function buildDashboard(coins) {
-  coins.forEach(coin => {
 
+/**
+ * Function builds each coin badge dynamically with own content and css.
+ * @param {*} coins [the coin data fetched from the API]
+ */
+function buildDashboard(coins) {
+
+// ForEach method loops through the JSON object
+  coins.forEach(coin => {
 // Credit to StackOverflow for this syntax. More info in Readme.md
     $('#coins-wrapper').append
     ([
@@ -37,7 +43,7 @@ function buildDashboard(coins) {
 }
 
 /**
- * Function to maintain theme selection during the session
+ * Function to maintain theme selection during the session.
  * Uses session storage data from last #theme-switch change
  * and sets the body and #theme-switch state to last known 
  * selection after page reload.
@@ -49,21 +55,23 @@ function buildDashboard(coins) {
   }
 }
 
-// Function to target children of the coin badged clicked and toggle "hide" class
+// Function to target children of the coin badge the user interacts with and toggle "hide" class.
 function extraInfo() {
   $(this).children().toggleClass('hide');
 }
 
 // Listeners
 
-// Listens for checkbox state change and toggles theme on body
-// Uses session storage to store theme selection state
+// Listens for checkbox state change and toggles theme on body.
+// Uses session storage to store theme selection state.
 $('#theme-switch').on('change', () => {
   $('body').toggleClass('dark light');
+
+// Conditional statement written in shorthand. Checks current theme state and changes the value in session storage.
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
-// Listens for hovering event on each coin badge and triggers extraInfo function
+// Listens for hovering event on each coin badge and triggers function to display extra information.
 $('#coins-wrapper').on('mouseenter mouseleave', '.coin', extraInfo);
 
 switchTheme();
