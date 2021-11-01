@@ -38,7 +38,7 @@ The webapp is designed as an interactive project that gives the user the ability
 ##  **Project Goals**
 * Use crypto-currency APIs to display relevant data to the user.
 * Offer the user the ability to build their portfolio on our platform.
-* Offer the user a interactive way of learning more about blockchain and testing their knowledge.
+* Offer the user an interactive way of learning more about blockchain and testing their knowledge.
 * Offer a way for the user to communicate with the owner.
 
 ## **User Goals**
@@ -120,7 +120,7 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 [Email Modal](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/email_modal.png)
 
-## **Features**
+# **Features**
 
 ### **Landing Page**
 
@@ -321,6 +321,15 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 5. In your Git Bash Terminal type *"git clone"* then paste the address.
 
 *Alternatively you can download the repository as ZIP or use [Github Desktop](https://desktop.github.com) to ge the repository on you local machine*
+
+**Using the EmailJS API:**
+
+1. Create an account/login on [EmailJS Website](https://www.emailjs.com).
+2. Go to Email Services and add an e-mail service of your choice.
+3. Got to Email Templates and create one.
+4. On the integration tab find User ID and Access Token.
+5. Update script with ID and token.
+6. Extra documentation on the API can be found [Here](https://www.emailjs.com/docs/).
 
 ## **Credits**
 
