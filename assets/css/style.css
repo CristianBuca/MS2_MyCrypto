@@ -3,7 +3,7 @@
 /* Global styles */
 
 /* Using CSS Variables to be able to change the webapp's color palette */
-/* I follower Fireship's channel on youtube to be able to implement this effectively. Full credit in Readme.md */
+/* I followed Fireship's channel on youtube to be able to implement this effectively. Full credit in Readme.md */
 
 .dark {
   --bg-clr: #2A231F;
@@ -187,6 +187,8 @@ h1 {
   cursor: help;
 }
 
+/* Credit for modal Florin Pop. Full Credit in readme.md */
+
 #info-modal-container {
   display: flex;
   align-items: center;
@@ -240,7 +242,7 @@ span {
 }
 
 #quiz-image {
-  background-image: url("../img/quiz-img/quiz-start-min.jpg");
+  background-image: url("../img/quiz-img/quiz_start_min.jpg");
   border-radius: 5px;
   background-position: center center;
   background-size: cover;
@@ -280,6 +282,7 @@ span {
 }
 
 /* Quiz button style inspired from https://getcssscan.com/css-buttons-examples button 33 */
+
 .quiz-btn {
   color: inherit;
   background-color:inherit;
@@ -408,7 +411,7 @@ td:nth-child(odd) {
   width: 100vw;
   height: 100vh;
   background-color: #0E174F;
-  background-image: url("../img/404-background-min.jpg");
+  background-image: url("../img/404_background_min.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
