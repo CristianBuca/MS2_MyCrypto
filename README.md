@@ -337,7 +337,20 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 2. Going on the [documentation page](https://www.coingecko.com/en/api/documentation) provides information for each endpoint.
 3. Expand endpoint of interest and click "Try it out", fill in parameters that match your query and click "Execute".
 4. Use the generated URL to make the call to the API.
-5. Along with the URL a response body preview and response headers are also available.
+5. Along with the URL a response body preview and headers are also available to view in the description.
+
+<details>
+  <summary> (Expand) CoinGeko API Test </summary>
+
+![Endpoint Test](/docs/misc/coingeko_api_test.png)
+</details>
+
+<details>
+  <summary> (Expand) CoinGeko API response </summary>
+
+![Endpoint Response](/docs/misc/coingeko_api_response.png)
+</details>
+
 
 ## **Credits**
 
