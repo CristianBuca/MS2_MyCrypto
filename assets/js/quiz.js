@@ -29,7 +29,7 @@ function displayQuestion() {
   for (let i = 0; i < answers.length; i++) {
     $(`<button class="answer quiz-btn">${answers[i]}</button>`).appendTo('#quiz-answers');
   };
-  $('#quiz-image').css('background-image', `url("assets/img/quiz-img/quiz-${quizIndex + 1}-min.jpg")`);
+  $('#quiz-image').css('background-image', `url("assets/img/quiz_img/quiz_${quizIndex + 1}_min.jpg")`);
   ++ quizIndex;
 }
 
@@ -97,12 +97,11 @@ function showResults() {
 }
 
 /**
- * Function to maintain theme selection during the session
+ * Function to maintain theme selection during the session.
  * Uses session storage data from last #theme-switch change
  * and sets the body and #theme-switch state to last known 
  * selection after page reload.
  */
-
 function switchTheme() {
   if (sessionStorage.getItem('theme') === 'dark') {
     $('body').toggleClass('light dark');
@@ -112,8 +111,8 @@ function switchTheme() {
 
 // Event Listeners
 
-// Listens for the Start Game button click and displays first question
-// Hides the Start Game Button and shows the Next Question Button
+// Listens for the Start Game button click and displays first question.
+// Hides the Start Game Button and shows the Next Question Button.
 
 quizStart.on('click', function() {
   displayQuestion();
@@ -124,7 +123,7 @@ quizStart.on('click', function() {
 
 
 // Listens for the Next Question button click and based on the current questionIndex
-// Displays the next question if available or reveals the show Show Results button to end game
+// displays the next question if available or reveals the Show Results button to end game.
 
 quizNext.on('click', function() {
   if (quizIndex < questions.length) displayQuestion();
@@ -151,6 +150,7 @@ $('#modal-close').on('click', () => $('#info-modal-container').css({'opacity' : 
 // Uses session storage to store theme selection state
 $('#theme-switch').on('change', () => {
   $('body').toggleClass('dark light');
+// Conditional statement written in shorthand. Checks current theme state and changes the value in session storage.
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
