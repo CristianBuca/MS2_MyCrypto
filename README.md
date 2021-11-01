@@ -351,6 +351,8 @@ Any code that was borrowed has been modified and adapted to fit my particular ne
 
 **Media**
 
+* Quiz questions/ answers and layout from [CoinTelegraph](https://cointelegraph.com/quiz/think-you-know-the-crypto-basics-take-our-quiz-to-find-out).
+* Quiz images from [Pexels](https://www.pexels.com/search/cryptocurrency/).
 * 404 Page background image from [Stockvault](https://www.stockvault.net).
 
 ### **Code Institute colleagues who's work I followed for guidance:**
