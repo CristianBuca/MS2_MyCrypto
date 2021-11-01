@@ -330,6 +330,15 @@ Any code that was borrowed has been modified and adapted to fit my particular ne
 
 **JavaScript/Jquery code:**
 
+* Expression to validate if the input is in the form of an e-mail address from [StackOverflow](https://stackoverflow.com/a/9204568).
+* To be able to find a building approach for the quiz I watched videos from [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=PL2jRjGd6MDrTTDyM7MJNX50Pyf9AYeEma&index=7&t=2726s), [Florin Pop](https://www.youtube.com/watch?v=dtKciwk_si4&list=PL2jRjGd6MDrTTDyM7MJNX50Pyf9AYeEma&index=16&t=1870s), [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&list=PL2jRjGd6MDrTTDyM7MJNX50Pyf9AYeEma&index=8&t=1442s). The latter has been the most influential as it was the closest to what I was aiming for.
+* The stopwatch feature in the quiz was built based on [Crypters Infotech](https://www.youtube.com/watch?v=EGD_A118efI&list=PL2jRjGd6MDrRDnC2R302N2rE0sRUinGyl&index=14&t=227s) 6-part tutorial.
+* For using localStorage/sessionStorage which I used for the portfolio and the theme switch I followed [dcode](https://www.youtube.com/watch?v=k8yJCeuP6I8), [LogRocket](https://blog.logrocket.com/localstorage-javascript-complete-guide/#getitem).
+* Approach in iterating localStorage from [StackOverFlow](https://stackoverflow.com/a/37507935).
+* The approach in building the cryptocurrency portfolio from [Creepto](https://www.publish0x.com/creepto-on-crypto/diy-code-a-crypto-portfolio-manager-xpjjwll) and there are definite traces of his code in repo.
+* Closest() method to target the entire row for removal in the portfolio I found on [Codepedia](https://codepedia.info/jquery-get-table-cell-td-value-div/).
+* Syntax for generating dynamic elements with custom CSS from [StackOverFlow](https://stackoverflow.com/a/48754590).
+
 
 
 **HTML/CSS**
