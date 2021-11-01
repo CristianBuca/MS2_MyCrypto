@@ -331,6 +331,14 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 5. Update script with ID and token.
 6. Extra documentation on the API can be found [Here](https://www.emailjs.com/docs/).
 
+**Using the CoinGeko API:**
+
+1. CoinGeko offers a free plan for the API that does not require signing up for it.
+2. Going on the [documentation page](https://www.coingecko.com/en/api/documentation) provides information for each endpoint.
+3. Expand endpoint of interest and click "Try it out", fill in parameters that match your query and click "Execute".
+4. Use the generated URL to make the call to the API.
+5. Along with the URL a response body preview and response headers are also available.
+
 ## **Credits**
 
 _I have followed dozens of projects and video tutorials trying to find the solutions that would fit this project.
