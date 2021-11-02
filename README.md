@@ -80,7 +80,7 @@ The Navbar was also built using BootStrap and collapses on small devices remaini
 
 ### **Colour Palette**
 
-![Nineties Grunge color combination](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/misc/color_palette.png)
+![Nineties Grunge color combination](/docs/misc/color_palette.png)
 
 Midnight Blue | Red Orange | Ebony | Misty Blue
 --- | --- | --- | ---
@@ -134,6 +134,8 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 The Landing Page features a grid displaying major crypto-currencies and their current prices. Currencies are organized by market capitalization in descending order. Each currency is displayed in it's own badge that the user can interact with by mouse hover (or tap on touch devices), to access 24-hour high and low prices.
 All the data displayed is generated dynamically through JavaScript and the [CoinGeko API](https://www.coingecko.com/en/api).
 
+All coin badges are dynamically generated with JavaScript and the moment them being displayed are instant confirmation that the information they are viewing is up to date and the API is up and running.
+
 *User stories solved by this feature:*
 
 * 1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
@@ -180,7 +182,7 @@ The quiz is built to be versatile and easy to update. By loading the questions f
 ![Portfolio Table]()
 </details>
 
-The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. The asset is added to the portfolio and displayed with the current market price along with a calculation of how much the user's holdings are valued at. Valuations are made both individually per asset and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
+The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. Before the asset is added to the portfolio, user input is checked against the list of all coins received from the API. Once it is validated the asset is displayed with the current market price and with a calculation of how much the user's holdings are valued at. Valuations are made both individually per asset and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
 
 This page makes heavy use of the [CoinGeko API](https://www.coingecko.com/en/api). When the user inputs a cryptocurrency name, symbol or just manually selects it from the searchable dropdown list, a check is made against the list fetched from the API and if a match is found then the asset ID is stored in LocalStorage as a key and the asset amount input is stored as the value. This allows the user to keep their portfolio data on their own computer.
 Due to the large number of cryptocurrencies (over 9000!!!) different endpoints need to be called for the input list and the market list which displays much more detailed information on each cryptocurrency.
@@ -208,7 +210,7 @@ To remove an asset completely the user can click the rubbish bin at the end of t
 ![Color Theme Switch]()
 </details>
 
-The Navbar is responsive to the size of the user's device and houses the Light/Dark Theme Switch. By using the browsers Session Storage the selected theme is kept between pages for the duration of the browsing session.
+The Navbar is responsive to the size of the user's device and houses the Light/Dark Theme Switch. By using the browsers Session Storage the selected theme is kept between pages for the duration of the browsing session. The theme toggler provides an extra layer of user interaction with instant feedback in the form of the background, font and shadow color change.
 
 *User stories solved by this feature:*
 
@@ -223,6 +225,7 @@ The Navbar is responsive to the size of the user's device and houses the Light/D
 </details>
 
 The Email Modal makes use of the EmailJS API to give the user the ability to send emails to the site owner directly from the webapp.
+Validation of the input fields is done on the front-end side with javascript and will prevent the form to be submitted with empty fields or an invalid email address syntax. Once the fields have been validated and form submitted the user receives confirmation in the form of an alert.
 
 *User stories solved by this feature:*
 
@@ -271,7 +274,6 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[Namecheap.com](https://www.namecheap.com/logo-maker/app/new)** For creating the logo.
 * **[EmailJs API](https://www.emailjs.com)** Is used to enable email exchange from the webapp.
 * **[CoinGeko API](https://www.coingecko.com/en/api)** Is used to fetch cryptocurrency information.
-
 
 ## **Testing**
 
@@ -351,7 +353,6 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 ![Endpoint Response](/docs/misc/coingeko_api_response.png)
 </details>
 
-
 ## **Credits**
 
 _I have followed dozens of projects and video tutorials trying to find the solutions that would fit this project.
@@ -368,8 +369,6 @@ Any code that was borrowed has been modified and adapted to fit my particular ne
 * The approach in building the cryptocurrency portfolio from [Creepto](https://www.publish0x.com/creepto-on-crypto/diy-code-a-crypto-portfolio-manager-xpjjwll) and there are definite traces of his code in repo.
 * Closest() method to target the entire row for removal in the portfolio I found on [Codepedia](https://codepedia.info/jquery-get-table-cell-td-value-div/).
 * Syntax for generating dynamic elements with custom CSS from [StackOverFlow](https://stackoverflow.com/a/48754590).
-
-
 
 **HTML/CSS**
 
