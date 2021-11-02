@@ -17,6 +17,10 @@
   --shadow-clr: #FF5D00;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #ff5e00b9;
+}
+
 body {
   background-color: var(--bg-clr);
   color: var(--font-clr);
@@ -242,7 +246,7 @@ span {
 }
 
 #quiz-image {
-  background-image: url("../img/quiz-img/quiz_start_min.jpg");
+  background-image: url("../img/quiz_img/quiz_start_min.jpg");
   border-radius: 5px;
   background-position: center center;
   background-size: cover;
