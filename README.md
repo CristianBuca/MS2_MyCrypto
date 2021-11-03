@@ -422,6 +422,9 @@ Credit to [StackOverflow](https://stackoverflow.com/questions/1359018/how-do-i-a
 
 * Fix: Each answer button is added an extra class when being generated and event listener for clicks on answers is targeting the class instead of the button element. When checkAnswer() function is triggered for the first time for each answer removes the class from the button preventing the event listener from registering extra clicks.
 
+* Bug: Unable to add assets to the portfolio that contain a space in their name.
+* Fix: Store assets in localStorage by ID instead of NAME and call API based on IDs instead of their names.
+
 ## **Deployment**
 
 The website is hosted and deployed from Github. The steps taken for deployment were:
