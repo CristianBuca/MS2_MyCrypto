@@ -17,10 +17,6 @@
   --shadow-clr: #FF5D00;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: #FF5D00;
-}
-
 body {
   background-color: var(--bg-clr);
   color: var(--font-clr);
@@ -97,6 +93,10 @@ input:checked[type="checkbox"]:after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
 }
 
+#theme-switch label {
+  font-size: 0;
+}
+
 label {
   font-weight: bold;
 }
@@ -107,6 +107,7 @@ label {
   background-image: url("../img/icons/logo/my_crypto_logo.png");
   background-position: center center;
   background-size: cover;
+  font-size: 0;
 }
 
 footer {
