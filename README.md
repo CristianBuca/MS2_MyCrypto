@@ -277,33 +277,33 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ## **Testing**
 
-### HTML validation was carried out with W3 Validator.
+### HTML validation was carried out with [W3 Validator](https://validator.w3.org).
 
 <details>
   <summary> (expand) Home Page HTML Validation found 0 errors:</summary>
 
 ![Home Page HTML Validation](/docs/test_img/html_validator/html_valid_index.png)
-</details
+</details>
 
 <details>
   <summary> (expand) Quiz Page HTML Validation found 0 errors, 2 warnings:</summary>
 
 ![Quiz Page HTML Validation](/docs/test_img/html_validator/html_valid_quiz.png)
-</details
+</details>
 
 <details>
   <summary> (expand) Portfolio Page HTML Validation found 0 errors, 2 warnings:</summary>
 
 ![Portfolio Page HTML Validation](/docs/test_img/html_validator/html_valid_portfolio.png)
-</details
+</details>
 
 <details>
   <summary> (expand) 404 Page HTML Validation found 0 errors:</summary>
 
 ![404 Page HTML Validation](/docs/test_img/html_validator/html_valid_404.png)
-</details
+</details>
 
-### CSS validation was carried out with W3 Jigsaw.
+### CSS validation was carried out with [W3 Jigsaw](https://jigsaw.w3.org/css-validator/).
 
 <details>
   <summary> (expand) css.style Jigsaw Validation found 0 errors:</summary>
@@ -311,57 +311,90 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 ![CSS Validation](/docs/test_img/css_validator/css_valid.png)
 </details>
 
-### Accessibility Evaluation was carried out with WAVE Web Accessibility Evaluation Tool.
+### Accessibility Evaluation was carried out with [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org).
 
 <details>
   <summary> (expand) Home Page WAVE Validation found 0 errors, 2 alerts:</summary>
 
 ![Home Page HTML Validation](/docs/test_img/wave_validator/wave_index.png)
-</details
+</details>
 
 <details>
   <summary> (expand) Quiz Page WAVE Validation found 0 errors, 3 alerts:</summary>
 
 ![Quiz Page HTML Validation](/docs/test_img/wave_validator/wave_quiz.png)
-</details
+</details>
 
 <details>
   <summary> (expand) Portfolio Page WAVE Validation found 0 errors, 3 alerts:</summary>
 
 ![Portfolio Page HTML Validation](/docs/test_img/wave_validator/wave_portfolio.png)
-</details
+</details>
 
 <details>
   <summary> (expand) 404 Page WAVE Validation found 0 errors, 2 alerts:</summary>
 
 ![404 Page HTML Validation](/docs/test_img/wave_validator/wave_404.png)
-</details
+</details>
 
-### Performance Tests using Chrome Lighthouse DevTools.
+### Performance Tests were carried out using Chrome Lighthouse DevTools.
 
 <details>
-  <summary> (expand) Home Page Lighthouse Test</summary>
+  <summary> (expand) Home Page Lighthouse Test:</summary>
 
 ![Home Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_index.PNG)
 </details>
 
 <details>
-  <summary> (expand) Quiz Page Lighthouse Test</summary>
+  <summary> (expand) Quiz Page Lighthouse Test:</summary>
 
 ![Quiz Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_quiz.PNG)
 </details>
 
 <details>
-  <summary> (expand) Portfolio Page Lighthouse Test</summary>
+  <summary> (expand) Portfolio Page Lighthouse Test:</summary>
 
 ![Portfolio Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_portfolio.PNG)
 </details>
 
 <details>
-  <summary> (expand) 404 Page Lighthouse Test</summary>
+  <summary> (expand) 404 Page Lighthouse Test:</summary>
 
 ![404 Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_404.PNG)
 </details>
+
+### JavaScript Code Tests were carried out with [JShint](https://jshint.com).
+
+<details>
+  <summary> (expand) email.js JSHint found 0 errors:</summary>
+
+![EmailJS script](/docs/test_img/jshint_validator/jshint_valid_email.png)
+</details>
+
+<details>
+  <summary> (expand) home.js JSHint found 0 errors 1 warning:</summary>
+
+![EmailJS script](/docs/test_img/jshint_validator/jshint_valid_home.png)
+</details>
+
+<details>
+  <summary> (expand) quiz.js JSHint found 0 errors 1 warning:</summary>
+
+![EmailJS script](/docs/test_img/jshint_validator/jshint_valid_quiz.png)
+</details>
+
+<details>
+  <summary> (expand) quiz_data.js JSHint found 0 errors:</summary>
+
+![EmailJS script](/docs/test_img/jshint_validator/jshint_valid_quiz_data.png)
+</details>
+
+<details>
+  <summary> (expand) portfolio.js JSHint found 0 errors, 3 warnings:</summary>
+
+![EmailJS script](/docs/test_img/jshint_validator/jshint_valid_portfolio.png)
+</details>
+
 
 ### Devices used for physical testing: 
 
