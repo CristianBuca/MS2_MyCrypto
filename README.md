@@ -279,15 +279,63 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ### HTML validation was carried out with W3 Validator.
 
+<details>
+  <summary> (expand) Home Page HTML Validation found 0 errors:</summary>
+
+![Home Page HTML Validation](/docs/test_img/html_validator/html_valid_index.png)
+</details
+
+<details>
+  <summary> (expand) Quiz Page HTML Validation found 0 errors, 2 warnings:</summary>
+
+![Quiz Page HTML Validation](/docs/test_img/html_validator/html_valid_quiz.png)
+</details
+
+<details>
+  <summary> (expand) Portfolio Page HTML Validation found 0 errors, 2 warnings:</summary>
+
+![Portfolio Page HTML Validation](/docs/test_img/html_validator/html_valid_portfolio.png)
+</details
+
+<details>
+  <summary> (expand) 404 Page HTML Validation found 0 errors:</summary>
+
+![404 Page HTML Validation](/docs/test_img/html_validator/html_valid_404.png)
+</details
+
 ### CSS validation was carried out with W3 Jigsaw.
 
 <details>
-  <summary> (expand) css.style Jigsaw Validation found no errors:</summary>
+  <summary> (expand) css.style Jigsaw Validation found 0 errors:</summary>
 
 ![CSS Validation](/docs/test_img/css_validator/css_valid.png)
 </details>
 
 ### Accessibility Evaluation was carried out with WAVE Web Accessibility Evaluation Tool.
+
+<details>
+  <summary> (expand) Home Page WAVE Validation found 0 errors, 2 alerts:</summary>
+
+![Home Page HTML Validation](/docs/test_img/wave_validator/wave_index.png)
+</details
+
+<details>
+  <summary> (expand) Quiz Page WAVE Validation found 0 errors, 3 alerts:</summary>
+
+![Quiz Page HTML Validation](/docs/test_img/wave_validator/wave_quiz.png)
+</details
+
+<details>
+  <summary> (expand) Portfolio Page WAVE Validation found 0 errors, 3 alerts:</summary>
+
+![Portfolio Page HTML Validation](/docs/test_img/wave_validator/wave_portfolio.png)
+</details
+
+<details>
+  <summary> (expand) 404 Page WAVE Validation found 0 errors, 2 alerts:</summary>
+
+![404 Page HTML Validation](/docs/test_img/wave_validator/wave_404.png)
+</details
 
 ### Performance Tests using Chrome Lighthouse DevTools.
 
