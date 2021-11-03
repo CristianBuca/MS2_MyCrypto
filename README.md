@@ -339,6 +339,30 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ### Performance Tests using Chrome Lighthouse DevTools.
 
+<details>
+  <summary> (expand) Home Page Lighthouse Test</summary>
+
+![Home Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_index.PNG)
+</details>
+
+<details>
+  <summary> (expand) Quiz Page Lighthouse Test</summary>
+
+![Quiz Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_quiz.PNG)
+</details>
+
+<details>
+  <summary> (expand) Portfolio Page Lighthouse Test</summary>
+
+![Portfolio Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_portfolio.PNG)
+</details>
+
+<details>
+  <summary> (expand) 404 Page Lighthouse Test</summary>
+
+![404 Page Lighthouse Test](/docs/test_img/lighthouse/lighthouse_404.PNG)
+</details>
+
 ### Devices used for physical testing: 
 
 * Samsung Galaxy S8,
