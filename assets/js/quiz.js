@@ -29,7 +29,7 @@ function displayQuestion() {
 
 // For Loop to iterate through the the answer choices array
   for (let i = 0; i < answers.length; i++) {
-    $(`<button class="answer quiz-btn">${answers[i]}</button>`).appendTo('#quiz-answers');
+    $(`<button class="answer quiz-btn active">${answers[i]}</button>`).appendTo('#quiz-answers');
   };
   $('#quiz-image').css('background-image', `url("assets/img/quiz_img/quiz_${quizIndex + 1}_min.jpg")`);
   ++ quizIndex;
@@ -43,12 +43,12 @@ function displayQuestion() {
  */
 
 function checkAnswer() {
-  if (this.innerText == questions[quizIndex -1 ].correct) {
-    $(this).addClass('correct');
+  if (this.innerText == questions[quizIndex - 1].correct) {
+    $(this).addClass('correct').removeClass('active');
     $(this).parent().append(`<p id="valid">${questions[quizIndex - 1].validation}</p>`);
     quizScore +=5;
   } else {
-    $(this).addClass('wrong');
+    $(this).addClass('wrong').removeClass('active');
     quizScore -=2;
   }
   $('#score').text(`Points: ${quizScore}`);
@@ -137,7 +137,7 @@ quizNext.on('click', function() {
 });
 
 // Listens for clicks on the answer buttons and calls checkAnswer function
-$('#quiz-answers').on('click', 'button', checkAnswer);
+$('#quiz-answers').on('click', '.active', checkAnswer);
 
 // Listens for click on Try Again button and reloads the page
 $('#quiz-restart').on('click', () => location.reload());
