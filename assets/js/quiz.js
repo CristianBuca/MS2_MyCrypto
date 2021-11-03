@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 // Global Variables
 
 // Quiz control buttons into global variables

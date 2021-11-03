@@ -1,3 +1,5 @@
+/* jshint esversion: 8 */
+
 // Functions
 
 /**
@@ -71,7 +73,7 @@ $('#theme-switch').on('change', () => {
   $('body').hasClass('dark') ? sessionStorage.setItem('theme', 'dark') : sessionStorage.setItem('theme', 'light');
 });
 
-// Listens for hovering event on each coin badge and triggers function to display extra information.
+// Listens for hover event on each coin badge and triggers function to display extra information.
 $('#coins-wrapper').on('mouseenter mouseleave', '.coin', extraInfo);
 
 switchTheme();

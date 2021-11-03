@@ -1,3 +1,7 @@
+/* jshint esversion: 8 */
+
+// Credit for the basics of building a portfolio to Creepto. More details in Readme.md.
+
 // Global Variables
 
 var coinList = new Array();
@@ -80,12 +84,12 @@ async function displayPortfolio() {
     $('#portfolio').append
       ([$('<table>', {'id': 'asset-table'}).append
         ([$('<tr>').append
-          ([$('<th>').html(' '),
+          ([$('<td>').html(' '),
             $('<th>').html('Name'),
             $('<th>').html('Price'),
             $('<th>').html('Holdings'),
             $('<th>').html('Value'),
-            $('<th>').html(' ')
+            $('<td>').html(' ')
           ])
         ])
       ])

@@ -1,3 +1,4 @@
+/* jshint esversion: 8 */
 
 // Each question object is structured with keys for: question text, array with answer choices, 
 // correct choice and extra validation message for correct choice.
@@ -69,4 +70,4 @@ const questions = [
     correct: "Only invest as much as you can afford to lose",
     validation: "Always remember that cryptocurrencies are extremely volatile — and there’s no predicting what will happen next. By investing conservatively, you can shield yourself against the risk of losing your hard-earned funds.",
   }
-]
+];
