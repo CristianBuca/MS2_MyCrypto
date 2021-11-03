@@ -24,8 +24,6 @@
   * [**Technologies Used**](#technologies-used)
   * [**Testing**](#testing)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## **You can find the deployed website** [**HERE**](https://cristianbuca.github.io/MS2_MyCrypto/)
 
@@ -409,6 +407,15 @@ Application performs as intended on all devices.
 ## **Testing of User Stories**
 
 ## **Bugs**
+
+* Bug: Multiple clicks on the same answer result function checkAnswer() being triggered multiple times resulting in erroneous score count and multiple displays of validation message for correct answers.
+
+<details>
+  <summary> (expand) Multiple clicks being registered on the same answer:</summary>
+
+  ![Quiz-answer Bug]()
+</details>
+* Fix: Each answer button is added an extra class when being generated and event listener for clicks on answers is targeting the class instead of the button element. When checkAnswer() function is triggered for the first time for each answer removes the class from the button preventing the event listener from registering extra clicks.
 
 ## **Deployment**
 
