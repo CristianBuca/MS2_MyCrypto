@@ -281,6 +281,12 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ### CSS validation was carried out with W3 Jigsaw.
 
+<details>
+  <summary> (expand) css.style Jigsaw Validation found no errors:</summary>
+
+![CSS Validation](/docs/test_img/css_validator/css_valid.png)
+</details>
+
 ### Accessibility Evaluation was carried out with WAVE Web Accessibility Evaluation Tool.
 
 ### Performance Tests using Chrome Lighthouse DevTools.
