@@ -408,6 +408,10 @@ Application performs as intended on all devices.
 
 ## **Bugs**
 
+* Bug: Event listener does not trigger on the dynamically generated answer buttons.
+* Fix: Apply the event listener to the button container and add selector for the clicks only on the buttons in the container.
+Credit to [StackOverflow](https://stackoverflow.com/questions/1359018/how-do-i-attach-events-to-dynamic-html-elements-with-jquery)
+
 * Bug: Multiple clicks on the same answer result function checkAnswer() being triggered multiple times resulting in erroneous score count and multiple displays of validation message for correct answers.
 
 <details>
@@ -415,6 +419,7 @@ Application performs as intended on all devices.
 
   ![Quiz-answer Bug]()
 </details>
+
 * Fix: Each answer button is added an extra class when being generated and event listener for clicks on answers is targeting the class instead of the button element. When checkAnswer() function is triggered for the first time for each answer removes the class from the button preventing the event listener from registering extra clicks.
 
 ## **Deployment**
