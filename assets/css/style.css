@@ -242,6 +242,15 @@ h1 {
   padding: 0;
 }
 
+.modal-dialog {
+  color: black;
+}
+
+.modalButton {
+  border-style: solid;
+  border-color:black;
+}
+
 span {
   border-radius: 5px;;
 }
