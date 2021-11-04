@@ -215,18 +215,20 @@ To remove an asset completely the user can click the rubbish bin at the end of t
 
 ### **Navbar**
 
-<details>
-  <summary> (Expand) Navbar </summary>
-
-![Responsive Navar]()
-![Color Theme Switch]()
-</details>
-
 The Navbar is responsive to the size of the user's device and houses the Light/Dark Theme Switch. By using the browsers Session Storage the selected theme is kept between pages for the duration of the browsing session. The theme toggler provides an extra layer of user interaction with instant feedback in the form of the background, font and shadow color change.
 
 *User stories solved by this feature:*
 
 * 8 - As a regular user, I want the option to change the current webapp color theme.
+
+
+<details>
+  <summary> (Expand) Navbar </summary>
+
+![Expanded Navbar](/docs/features/navbar_desktop.png)
+
+![Collapsed Navbar on mobile devices](/docs/features/navbar_tablet.png)
+</details>
 
 ### **Email Modal**
 
