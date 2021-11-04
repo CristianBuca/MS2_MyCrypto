@@ -201,6 +201,17 @@ To remove an asset completely the user can click the rubbish bin at the end of t
 * 7 - As a regular user, I want to store my portfolio data.
 * 9 - As a regular user, I want the ability to edit previous portfolio entries.
 
+<details>
+  <summary> (Expand) Portfolio showcase.</summary>
+
+![Portfolio on mobile](/docs/features/portfolio_mob.png)
+
+![Portfolio on tablet](/docs/features/portfolio_tablet.png)
+
+![Portfolio on 1080p](/docs/features/portfolio_1080p.png)
+
+![Portfolio on 1440p](/docs/features/portfolio_1440p.png)
+</details>
 
 ### **Navbar**
 
