@@ -221,7 +221,6 @@ The Navbar is responsive to the size of the user's device and houses the Light/D
 
 * 8 - As a regular user, I want the option to change the current webapp color theme.
 
-
 <details>
   <summary> (Expand) Navbar </summary>
 
@@ -232,18 +231,18 @@ The Navbar is responsive to the size of the user's device and houses the Light/D
 
 ### **Email Modal**
 
-<details>
-  <summary> (Expand) Email Modal </summary>
-
-![Email Modal]()
-</details>
-
 The Email Modal makes use of the EmailJS API to give the user the ability to send emails to the site owner directly from the webapp.
 Validation of the input fields is done on the front-end side with javascript and will prevent the form to be submitted with empty fields or an invalid email address syntax. Once the fields have been validated and form submitted the user receives confirmation in the form of an alert.
 
 *User stories solved by this feature:*
 
 * 12 - As a site owner, I want to provide the user a way to get in contact.
+
+<details>
+  <summary> (Expand) Email Modal </summary>
+
+![Email Modal](docs/features/email_modal.png)
+</details>
 
 ### **Footer**
 
