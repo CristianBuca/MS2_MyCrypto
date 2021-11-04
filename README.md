@@ -1,5 +1,8 @@
 # **My Crypto**
 
+![My Crypto Logo](assets/img/icons/logo/my_crypto_logo.png)
+
+
 - [**My Crypto**](#my-crypto)
 - [**User Experience**](#user-experience)
 - [**Strategy**](#strategy)
@@ -289,6 +292,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[Namecheap.com](https://www.namecheap.com/logo-maker/app/new)** For creating the logo.
 * **[EmailJs API](https://www.emailjs.com)** Is used to enable email exchange from the webapp.
 * **[CoinGeko API](https://www.coingecko.com/en/api)** Is used to fetch cryptocurrency information.
+* **[AmIResponsive](http://ami.responsivedesign.is)** For the multi-device mockup.
 
 ## **Testing**
 
@@ -455,7 +459,7 @@ The website is hosted and deployed from Github. The steps taken for deployment w
 7. Clicked **Save**,
 8. Once the page was refreshed I was presented with the link to the live website as seen in the image below:
 
-![Published site]()
+![Published site](docs/misc/published.png)
 
 **Steps to follow for cloning this repository:**
 
