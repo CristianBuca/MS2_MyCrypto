@@ -262,13 +262,13 @@ In the footer, the user can find links the owner social medial.
 
 ### **404 Page**
 
-<details>
-  <summary> (expand) 404 Error</summary>
-
-![404 Page]()
-</details>
-
 The 404 Error Page is displayed in case of broken or absent links. It provides the user with the ability to go back to one of the webapp pages and maintains user engagement.
+
+<details>
+  <summary> (expand) 404 Error Page</summary>
+
+![404 Page](docs/features/404_page.png)
+</details>
 
 ## **Technologies Used**
 
