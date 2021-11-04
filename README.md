@@ -246,17 +246,19 @@ Validation of the input fields is done on the front-end side with javascript and
 
 ### **Footer**
 
-<details>
-  <summary> (Expand) Footer </summary>
-
-![Footer]()
-</details>
-
 In the footer, the user can find links the owner social medial.
 
 *User stories solved by this feature:*
 
 * 13 - As a site owner, I want to showcase my social media.
+
+<details>
+  <summary> (Expand) Footer </summary>
+
+![Footer](docs/features/footer_dark.png)
+
+![Footer](docs/features/footer_light.png)
+</details>
 
 ### **404 Page**
 
