@@ -122,12 +122,6 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 ### **Landing Page**
 
-<details>
-  <summary> (Expand) Currency badges displaying up-to-date information.</summary>
-
-![Currency Badge]()
-![Currency Badge on interaction]()
-</details>
 
 The Landing Page features a grid displaying major crypto-currencies and their current prices. Currencies are organized by market capitalization in descending order. Each currency is displayed in it's own badge that the user can interact with by mouse hover (or tap on touch devices), to access 24-hour high and low prices.
 All the data displayed is generated dynamically through JavaScript and the [CoinGeko API](https://www.coingecko.com/en/api).
@@ -137,6 +131,18 @@ All coin badges are dynamically generated with JavaScript and the moment them be
 *User stories solved by this feature:*
 
 * 1 - As a new user, I want to see recent data on major crypto-currencies by market capitalization.
+
+<details>
+  <summary> (Expand) Landing Page on different device widths.</summary>
+
+![Landing Page on mobile](/docs/features/landing_mob.png)
+
+![Landing Page on tablet](/docs/features/landing_tablet.png)
+
+![Landing Page on 1080p](/docs/features/landing_1080p.png)
+
+![Landing Page on 1440p](/docs/features/landing_1440p.png)
+</details>
 
 ### **Quiz**
 
