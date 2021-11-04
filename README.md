@@ -3,6 +3,8 @@
 ![My Crypto Logo](assets/img/icons/logo/my_crypto_logo.png)
 
 
+![Responsive Layout](docs/misc/responsive.PNG)
+
 - [**My Crypto**](#my-crypto)
 - [**User Experience**](#user-experience)
 - [**Strategy**](#strategy)
