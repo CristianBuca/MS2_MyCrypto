@@ -122,7 +122,6 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 ### **Landing Page**
 
-
 The Landing Page features a grid displaying major crypto-currencies and their current prices. Currencies are organized by market capitalization in descending order. Each currency is displayed in it's own badge that the user can interact with by mouse hover (or tap on touch devices), to access 24-hour high and low prices.
 All the data displayed is generated dynamically through JavaScript and the [CoinGeko API](https://www.coingecko.com/en/api).
 
@@ -145,15 +144,6 @@ All coin badges are dynamically generated with JavaScript and the moment them be
 </details>
 
 ### **Quiz**
-
-<details>
-  <summary> (Expand) Quiz Features.</summary>
-
-![Quiz Starting Page]()
-![Quiz Questions]()
-![Quiz End Page]()
-![Quiz Info Modal]()
-</details>
 
 The Quiz Page displays a quiz with crypto-currency related questions. Each question is accompanied by a different picture and the pictures featured are hidden on small devices to maintain focus on the quiz.
 
@@ -178,13 +168,19 @@ The quiz is built to be versatile and easy to update. By loading the questions f
 * 10 - As a regular user, I want to test the previously acquired knowledge.
 * 11 - As a site owner, I want the knowledge quiz to be versatile and easy to update.
 
-### **Portfolio**
-
 <details>
-  <summary> (Expand) Portfolio showcase.</summary>
+  <summary> (Expand) Quiz Features.</summary>
 
-![Portfolio Table]()
+![Quiz on mobile](/docs/features/quiz_mob.png)
+
+![Quiz on tablet](/docs/features/quiz_tablet.png)
+
+![Quiz on 1080p](/docs/features/quiz_1080p.png)
+
+![Quiz on 1440p](/docs/features/quiz_1440p.png)
 </details>
+
+### **Portfolio**
 
 The Portfolio Page displays all the user's assets in the form of a table. The user is able to add different currencies by inputting either the name, symbol or by selecting it from a searchable drop-down list; along with the quantity for each asset. Before the asset is added to the portfolio, user input is checked against the list of all coins received from the API. Once it is validated the asset is displayed with the current market price and with a calculation of how much the user's holdings are valued at. Valuations are made both individually per asset and as a total. Users are able to remove assets from their portfolio by interacting with the rubbish bin adjacent to it.
 
@@ -204,6 +200,7 @@ To remove an asset completely the user can click the rubbish bin at the end of t
 * 4 - As a new user, I want to see the total portfolio valuation.
 * 7 - As a regular user, I want to store my portfolio data.
 * 9 - As a regular user, I want the ability to edit previous portfolio entries.
+
 
 ### **Navbar**
 
