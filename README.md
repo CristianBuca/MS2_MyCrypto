@@ -432,7 +432,7 @@ Application performs as intended on all devices.
 <details>
   <summary> (expand) Multiple clicks being registered on the same answer:</summary>
 
-  ![User Story 1](docs/test_user_stories/user_story_1.mp4)
+  ![User Story 1](https://user-images.githubusercontent.com/79543676/140564719-76db9b46-2d0c-4282-bce2-979b96af992d.mp4)
 </details>
 
 ## **Bugs**
@@ -557,3 +557,4 @@ Any code that was borrowed has been modified and adapted to fit my particular ne
 _This project is for educational use only and was created as a Milestone Project for the Code Institute Module of Interactive Frontend Development_
 
 Developed by Cristian Buca
+
