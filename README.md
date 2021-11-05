@@ -447,6 +447,13 @@ Application performs as intended on all devices.
   https://user-images.githubusercontent.com/79543676/140587959-09b0f953-1d3e-4860-af74-68dfcda3cd13.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 4 testing video) </summary>
+
+  https://user-images.githubusercontent.com/79543676/140588272-5daa2760-1f20-4c34-95ac-5e3d054a532b.mp4
+</details>
+
+
 
 ## **Bugs**
 
