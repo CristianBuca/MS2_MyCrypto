@@ -10,7 +10,7 @@
   * [**Project Goals**](#--project-goals--)
   * [**User Goals**](#--user-goals--)
   * [**User Stories**](#--user-stories--)
-  * [**Design**](#--design--)
+  * [**Design**](#design)
 - [**Scope**](#--scope--)
   * [Feature requirements](#feature-requirements-)
 - [**Structure**](#--structure--)
