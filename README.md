@@ -501,6 +501,12 @@ Application performs as intended on all devices.
   https://user-images.githubusercontent.com/79543676/140588680-4250c1ec-af3e-48f5-8bfa-d4512ff0b61d.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 13 testing video) </summary>
+
+  https://user-images.githubusercontent.com/79543676/140588734-cf40597a-d084-48f9-8e8f-e13823850f84.mp4
+</details>
+
 
 ## **Bugs**
 
