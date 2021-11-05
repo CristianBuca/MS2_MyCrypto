@@ -430,9 +430,9 @@ Application performs as intended on all devices.
 ## **Testing of User Stories**
 
 <details>
-  <summary> (expand) Multiple clicks being registered on the same answer:</summary>
+  <summary> (Expand for testing process video) </summary>
 
-  ![User Story 1](https://user-images.githubusercontent.com/79543676/140566288-2d07f04c-1b11-44d5-b40f-62bff7e20fed.mp4)
+  https://user-images.githubusercontent.com/79543676/140566288-2d07f04c-1b11-44d5-b40f-62bff7e20fed.mp4
 </details>
 
 ## **Bugs**
