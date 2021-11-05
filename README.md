@@ -453,6 +453,13 @@ Application performs as intended on all devices.
   https://user-images.githubusercontent.com/79543676/140588272-5daa2760-1f20-4c34-95ac-5e3d054a532b.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 5 testing video) </summary>
+ 
+  https://user-images.githubusercontent.com/79543676/140588329-9636efce-2a13-4e88-9e22-93e0315f6c33.mp4
+</details>
+
+
 
 
 ## **Bugs**
