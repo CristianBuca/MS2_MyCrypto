@@ -489,7 +489,11 @@ Application performs as intended on all devices.
   https://user-images.githubusercontent.com/79543676/140588603-f212437f-b608-4cd6-b7b4-f3445ee00d1e.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 11 testing video) </summary>
 
+  https://user-images.githubusercontent.com/79543676/140588644-1648d384-a124-4d29-a357-085bc7a9844f.mp4
+</details>
 
 ## **Bugs**
 
