@@ -460,12 +460,16 @@ Application performs as intended on all devices.
 </details>
 
 <details>
-  <summary> (Expand - User Story 2 testing video) </summary>
+  <summary> (Expand - User Story 6 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588369-5b27cec6-1fd5-4d6e-a3d4-1142d739b90c.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 7 testing video) </summary>
 
+  https://user-images.githubusercontent.com/79543676/140588411-7e35764d-4540-418d-bdbb-b4aca894e4d0.mp4
+</details>
 
 ## **Bugs**
 
