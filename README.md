@@ -430,10 +430,11 @@ Application performs as intended on all devices.
 ## **Testing of User Stories**
 
 <details>
-  <summary> (Expand for testing process video) </summary>
+  <summary> (Expand - User Story 1 testing video) </summary>
 
-  https://user-images.githubusercontent.com/79543676/140566288-2d07f04c-1b11-44d5-b40f-62bff7e20fed.mp4
+  https://user-images.githubusercontent.com/79543676/140587509-0f297a4c-b235-48f1-add7-e797432f4f5a.mp4
 </details>
+
 
 ## **Bugs**
 
