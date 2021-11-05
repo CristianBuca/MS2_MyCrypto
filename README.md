@@ -432,7 +432,7 @@ Application performs as intended on all devices.
 <details>
   <summary> (expand) Multiple clicks being registered on the same answer:</summary>
 
-  ![User Story 1](docs\test_user_stories\user_story_1.mp4)
+  ![User Story 1](docs/test_user_stories/user_story_1.mp4)
 </details>
 
 ## **Bugs**
