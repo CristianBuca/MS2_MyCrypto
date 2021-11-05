@@ -483,6 +483,14 @@ Application performs as intended on all devices.
   https://user-images.githubusercontent.com/79543676/140588553-39bdb347-bf92-49c2-a5ac-56e3c12a9d17.mp4
 </details>
 
+<details>
+  <summary> (Expand - User Story 10 testing video) </summary>
+
+  https://user-images.githubusercontent.com/79543676/140588603-f212437f-b608-4cd6-b7b4-f3445ee00d1e.mp4
+</details>
+
+
+
 ## **Bugs**
 
 * Bug: Event listener does not trigger on the dynamically generated answer buttons.
