@@ -32,8 +32,6 @@
   * [**Acknowledgements**](#acknowledgements)
   * [Disclaimer](#disclaimer)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## **You can find the deployed website** [**HERE**](https://cristianbuca.github.io/MS2_MyCrypto/)
 
@@ -300,6 +298,7 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 * **[EmailJs API](https://www.emailjs.com)** Is used to enable email exchange from the webapp.
 * **[CoinGeko API](https://www.coingecko.com/en/api)** Is used to fetch cryptocurrency information.
 * **[AmIResponsive](http://ami.responsivedesign.is)** For the multi-device mockup.
+* **[Markdown ToC](https://ecotrust-canada.github.io/markdown-toc/)** Used to generate the table of contents for Readme.md
 
 ## **Testing**
 
