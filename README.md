@@ -531,6 +531,12 @@ Credit to [StackOverflow](https://stackoverflow.com/questions/1359018/how-do-i-a
 * Bug: Unable to add assets to the portfolio that contain a space in their name.
 * Fix: Store assets in localStorage by ID instead of NAME and call API based on IDs instead of their names.
 
+* Bug: Method to generate random number to select an image from assets to display with each quiz question includes "0" while images names start from 1. Whenever 0 would be generated no image would be displayed and console would display the error:
+
+```GET http://127.0.0.1:5501/assets/img/quiz_img/quiz_0_min.jpg 404 (Not Found)```
+
+* Fix: Add 1 to all random numbers generated.
+
 ## **Deployment**
 
 The website is hosted and deployed from Github. The steps taken for deployment were:
