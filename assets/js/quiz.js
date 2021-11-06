@@ -10,6 +10,7 @@ var quizIndex = 0;
 var quizScore = 0;
 var interval;
 var elapsedTime;
+var randomQuestions = questions.sort(() => Math.random() - .5);
 
 // Functions
 
@@ -24,8 +25,8 @@ var elapsedTime;
 
 function displayQuestion() {
   $('#quiz-answers').text('');
-  $('#quiz-question').text(questions[quizIndex].question);
-  let answers = questions[quizIndex].choices;
+  $('#quiz-question').text(randomQuestions[quizIndex].question);
+  let answers = randomQuestions[quizIndex].choices;
 
 // For Loop to iterate through the the answer choices array
   for (let i = 0; i < answers.length; i++) {
@@ -43,9 +44,9 @@ function displayQuestion() {
  */
 
 function checkAnswer() {
-  if (this.innerText == questions[quizIndex - 1].correct) {
+  if (this.innerText == randomQuestions[quizIndex - 1].correct) {
     $(this).addClass('correct').removeClass('active');
-    $(this).parent().append(`<p id="valid">${questions[quizIndex - 1].validation}</p>`);
+    $(this).parent().append(`<p id="valid">${randomQuestions[quizIndex - 1].validation}</p>`);
     quizScore +=5;
   } else {
     $(this).addClass('wrong').removeClass('active');
@@ -128,7 +129,7 @@ quizStart.on('click', function() {
 // displays the next question if available or reveals the Show Results button to end game.
 
 quizNext.on('click', function() {
-  if (quizIndex < questions.length) displayQuestion();
+  if (quizIndex < randomQuestions.length) displayQuestion();
   else {
     showResults()
     quizNext.addClass('hide');
