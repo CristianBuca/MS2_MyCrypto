@@ -34,7 +34,7 @@ function displayQuestion() {
   for (let i = 0; i < answers.length; i++) {
     $(`<button class="answer quiz-btn active">${answers[i]}</button>`).appendTo('#quiz-answers');
   };
-  $('#quiz-image').css('background-image', `url("assets/img/quiz_img/quiz_${quizIndex + 1}_min.jpg")`);
+  $('#quiz-image').css('background-image', `url("assets/img/quiz_img/quiz_${Math.floor(Math.random() * randomQuestions.length)}_min.jpg")`);
   ++ quizIndex;
 }
 
