@@ -10,6 +10,8 @@ var quizIndex = 0;
 var quizScore = 0;
 var interval;
 var elapsedTime;
+
+// Credit for this method to Web Dev Simplified. Full credit in readme.
 var randomQuestions = questions.sort(() => Math.random() - .5);
 
 // Functions
