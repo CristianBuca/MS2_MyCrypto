@@ -601,6 +601,7 @@ Any code that was borrowed has been modified and adapted to fit my particular ne
 * The approach in building the cryptocurrency portfolio from [Creepto](https://www.publish0x.com/creepto-on-crypto/diy-code-a-crypto-portfolio-manager-xpjjwll) and there are definite traces of his code in repo.
 * Closest() method to target the entire row for removal in the portfolio I found on [Codepedia](https://codepedia.info/jquery-get-table-cell-td-value-div/).
 * Syntax for generating dynamic elements with custom CSS from [StackOverFlow](https://stackoverflow.com/a/48754590).
+* Method for randomizing questions from [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&list=PL2jRjGd6MDrTTDyM7MJNX50Pyf9AYeEma&index=8&t=1443s).
 
 **HTML/CSS**
 
