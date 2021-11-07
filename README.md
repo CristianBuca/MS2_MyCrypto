@@ -118,13 +118,29 @@ Font Scheme is comprised of the fonts from the Ubuntu Family for titles, Oxygen 
 
 ## **Wireframes**
 
-[Landing Page](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/landing_page.png)
+<details>
+  <summary> (Expand) Landing Page Wireframes.</summary>
 
-[Quiz](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/crypto_quiz.png)
+![Landing Page Wireframes](docs/wireframes/landing_page.png)
+</details>
 
-[Portfolio](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/portfolio_page.png)
+<details>
+  <summary> (Expand) Quiz Page Wireframes.</summary>
 
-[Email Modal](https://github.com/CristianBuca/MS2_MyCrypto/blob/main/docs/wireframes/email_modal.png)
+![Quiz Page Wireframes](docs/wireframes/crypto_quiz.png)
+</details>
+
+<details>
+  <summary> (Expand) Portfolio Page Wireframes.</summary>
+
+![Portfolio Page Wireframes](docs/wireframes/portfolio_page.png)
+</details>
+
+<details>
+  <summary> (Expand) Email Modal Wireframes.</summary>
+
+![Email Modal Wireframes](docs/wireframes/email_modal.png)
+</details>
 
 # **Features**
 
@@ -433,10 +449,14 @@ Application performs as intended on all devices.
 
 ## **Testing of User Stories**
 
+
+
 <details>
   <summary> (Expand - User Story 1 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140587509-0f297a4c-b235-48f1-add7-e797432f4f5a.mp4
+
+
 </details>
 
 <details>
