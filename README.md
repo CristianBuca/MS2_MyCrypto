@@ -469,6 +469,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_1_test.mp4)
 </details>
 
+### 2. As a new user, I want to add personal crypto-currency assets.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Portfolio Page | Click the "Portfolio" Link in navbar. Click on Asset Input Field. Input symbol, name or select from list the asset. Click on "Enter amount" Input Field. Enter amount. Click "Add" button. | See the asset added to the table. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 2 testing video) </summary>
 
