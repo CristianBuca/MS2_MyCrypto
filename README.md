@@ -406,6 +406,8 @@ The 404 Error Page is displayed in case of broken or absent links. It provides t
 
 ### JavaScript Code Tests were carried out with [JShint](https://jshint.com).
 
+JSHint warnings are due to the use of shorthand for IF statements and the use of JQuery where JSHint interprets "$" as an unknown variable.
+
 <details>
   <summary> (expand) email.js JSHint found 0 errors:</summary>
 
@@ -449,86 +451,111 @@ Application performs as intended on all devices.
 
 ## **Testing of User Stories**
 
-
+_GitHub does not allow videos hosted in the local repository to be played on the repository page.
+Although when viewing on GitHub these videos appear fine, they might not be available in this format if this project is forked. Please refer to the Local Links if needed._
 
 <details>
   <summary> (Expand - User Story 1 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140587509-0f297a4c-b235-48f1-add7-e797432f4f5a.mp4
 
-
+  [Local Link](docs/test_user_stories/user_story_1_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 2 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140587736-5d87a52a-8c8d-4aab-a639-995638890542.mp4
+
+  [Local Link](docs/test_user_stories/user_story_2_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 3 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140587959-09b0f953-1d3e-4860-af74-68dfcda3cd13.mp4
+
+  [Local Link](docs/test_user_stories/user_story_3_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 4 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588272-5daa2760-1f20-4c34-95ac-5e3d054a532b.mp4
+
+  [Local Link](docs/test_user_stories/user_story_4_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 5 testing video) </summary>
  
   https://user-images.githubusercontent.com/79543676/140588329-9636efce-2a13-4e88-9e22-93e0315f6c33.mp4
+
+  [Local Link](docs/test_user_stories/user_story_5_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 6 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588369-5b27cec6-1fd5-4d6e-a3d4-1142d739b90c.mp4
+
+  [Local Link](docs/test_user_stories/user_story_6_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 7 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588411-7e35764d-4540-418d-bdbb-b4aca894e4d0.mp4
+
+  [Local Link](docs/test_user_stories/user_story_7_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 8 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588507-401f9bdd-999f-4bcf-8af4-13aa38fea442.mp4
+
+  [Local Link](docs/test_user_stories/user_story_8_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588553-39bdb347-bf92-49c2-a5ac-56e3c12a9d17.mp4
+
+  [Local Link](docs/test_user_stories/user_story_9_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 10 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588603-f212437f-b608-4cd6-b7b4-f3445ee00d1e.mp4
+
+  [Local Link](docs/test_user_stories/user_story_10_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 11 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588644-1648d384-a124-4d29-a357-085bc7a9844f.mp4
+
+  [Local Link](docs/test_user_stories/user_story_11_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 12 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588680-4250c1ec-af3e-48f5-8bfa-d4512ff0b61d.mp4
+
+  [Local Link](docs/test_user_stories/user_story_12_test.mp4)
 </details>
 
 <details>
   <summary> (Expand - User Story 13 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588734-cf40597a-d084-48f9-8e8f-e13823850f84.mp4
+
+  [Local Link](docs/test_user_stories/user_story_13_test.mp4)
 </details>
 
 
