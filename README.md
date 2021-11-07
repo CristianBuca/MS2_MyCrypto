@@ -623,6 +623,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_12_test.mp4)
 </details>
 
+### 13. As a site owner, I want to showcase my social media.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Social media links in the page footer | Click on the social media icons in the page footer | Social media pages to open in new tab. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 13 testing video) </summary>
 
