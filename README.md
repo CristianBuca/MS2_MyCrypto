@@ -609,6 +609,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_11_test.mp4)
 </details>
 
+### 12. As a site owner, I want to provide the user a way to get in contact.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Email modal that uses EmailJS API | Click on "Get in touch" Link in the Navbar. Fill in the input fields. Click Send | Validation when the API sends the message to the site owners inbox. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 12 testing video) </summary>
 
