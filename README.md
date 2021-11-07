@@ -598,6 +598,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 <details>
   <summary> (Expand - User Story 11 testing video) </summary>
 
+### 11. As a site owner, I want the knowledge quiz to be versatile and easy to update.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| quiz_data.js script housing all the questions and answers for the quiz | Open project repository. Locate quiz_data.js in assets/js/. Open quiz_data.js and replace questions and answers. The quiz data is displayed dynamically thus making it easy for variable number of answers to be displayed for one question and not being hard coded in HTML to a specific number. | View new questions being displayed in the quiz. | Works as expected |
+
   https://user-images.githubusercontent.com/79543676/140588644-1648d384-a124-4d29-a357-085bc7a9844f.mp4
 
   [Local Link](docs/test_user_stories/user_story_11_test.mp4)
