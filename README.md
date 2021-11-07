@@ -497,6 +497,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_3_test.mp4)
 </details>
 
+### 4. As a new user, I want to see the total portfolio valuation.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Current Portfolio Value section at the top of Portfolio Page | Refresh Page. View total portfolio valuation. | See the total valuation of all assets. | Works as expected.
+
 <details>
   <summary> (Expand - User Story 4 testing video) </summary>
 
