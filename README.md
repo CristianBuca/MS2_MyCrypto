@@ -180,10 +180,11 @@ The user is able to choose multiple answers before going to the next question. F
 
 The choices in the design were made for first time users to maintain engagement with the information in the quiz. The implementation of a stopwatch instead of a countdown timer and by giving the user the ability to keep trying until they select the right answer before moving to the next question, provides the first time user with the chance to learn something new on initial interactions with the game.
 
-For the returning user the stopwatch and the score keeping provides the ability to test previously acquired knowledge and a challenge to beat previous score and completion time. 
+For the returning user the order in which the questions are being displayed is randomized on each game play.
+The stopwatch and the score keeping provides the ability to test previously acquired knowledge and a challenge to beat previous score and completion time.
 Score is kept not only by rewarding points for right answer selections but by deducting points for wrong answers. Coupled with the stopwatch feature it adds a variable layer of difficulty and replay value to the game.
 
-The quiz is built to be versatile and easy to update. By loading the questions from a separate file in JSON format the site owner is able to easily change or update game. The quiz is able to adapt to variable number of questions as the HTML is dynamically generated through JavaScript.
+The quiz is built to be versatile and easy to update. By loading the questions from a separate file the site owner is able to easily change or update game. The quiz is able to adapt to variable number of answer choices as the HTML is dynamically generated through JavaScript.
 
 *User stories solved by this feature:*
 
