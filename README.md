@@ -567,7 +567,11 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_8_test.mp4)
 </details>
 
+### 9. As a regular user, I want the ability to edit previous portfolio entries.
 
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Portfolio Page input fields and trash bin icons | To change the Holding amount of an existing asset select the asset the same asset in the dropdown menu and input new amount. To remove asset from table click the trash bin icon in the asset's table row. | Updated amount to show in table when updating. Asset to be removed when clicking trash bin. | Works as expected |
 
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
