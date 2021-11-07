@@ -483,6 +483,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_2_test.mp4)
 </details>
 
+### 3. As a new user, I want to see the asset valuation.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Asset table on Portfolio Page | Assets added as described in User Story 2 are stored in Local Storage. Refresh Page, view table containing assets. | View current price and valuation for each asset added. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 3 testing video) </summary>
 
