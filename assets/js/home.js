@@ -36,9 +36,9 @@ function buildDashboard(coins) {
         $('<div/>').html(`${coin.symbol}`),
         $('<div/>', { css: {'font-weight': 'bold'}}).html(`${coin.name}`),
         $('<div/>').html(`${coin.current_price} <i class="fas fa-dollar-sign"></i>`),
-        $('<div/>', { 'class': 'hide'}).html(`24h <i class="fas fa-angle-double-up"></i> ${coin.high_24h}`),
+        $('<div/>', { 'class': 'hide', css: {'color': 'green'} }).html(`24h <i class="fas fa-angle-double-up"></i> $${coin.high_24h}`),
         $('<div/>', { 'class': 'hide', css: {'font-weight': 'bold'}}).html(`${coin.name}`),
-        $('<div/>', { 'class': 'hide'}).html(`24h <i class="fas fa-angle-double-down"></i> ${coin.low_24h}`)
+        $('<div/>', { 'class': 'hide', css: {'color': 'red'} }).html(`24h <i class="fas fa-angle-double-down"></i> $${coin.low_24h}`)
       ]),
     ]);
   });
