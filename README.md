@@ -539,6 +539,20 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_6_test.mp4)
 </details>
 
+### 7. As a regular user, I want to store my portfolio data.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Add asset section on portfolio page | Click on portfolio link in navigation bar. Add asset as described in User Story 2. Close page / browser. Open page again. | To see added assets persist through different browsing session. See added data stored in Local Storage | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 7 testing video) </summary>
+
+  https://user-images.githubusercontent.com/79543676/140588411-7e35764d-4540-418d-bdbb-b4aca894e4d0.mp4
+
+  [Local Link](docs/test_user_stories/user_story_7_test.mp4)
+</details>
+
 
 
 <details>
