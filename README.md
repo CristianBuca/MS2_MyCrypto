@@ -581,6 +581,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_9_test.mp4)
 </details>
 
+### 10. As a regular user, I want to test the previously acquired knowledge.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| End screen on quiz game | Click on try again button at the end of the quiz | The quiz game starts over and offer the chance to gain a better score and better completion time | Works as expected |
+
 <details>
   <summary> (Expand - User Story 10 testing video) </summary>
 
