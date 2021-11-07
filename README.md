@@ -572,7 +572,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 |Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| Portfolio Page input fields and trash bin icons | To change the Holding amount of an existing asset select the asset the same asset in the dropdown menu and input new amount. To remove asset from table click the trash bin icon in the asset's table row. | Updated amount to show in table when updating. Asset to be removed when clicking trash bin. | Works as expected |
+| Portfolio Page input fields and trash bin icons | To change the Holding amount of an existing asset, select the same asset in the dropdown menu and input new amount. To remove asset from table click the trash bin icon in the asset's table row. | Updated amount to show in table when updating. Asset to be removed when clicking trash bin. | Works as expected |
 
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
@@ -586,7 +586,7 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
 
 |Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
-| End screen on quiz game | Click on try again button at the end of the quiz | The quiz game starts over and offer the chance to gain a better score and better completion time | Works as expected |
+| End screen on quiz game | Click on try again button at the end of the quiz | The quiz game starts over and offers the chance to gain a better score and better completion time | Works as expected |
 
 <details>
   <summary> (Expand - User Story 10 testing video) </summary>
@@ -596,14 +596,14 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_10_test.mp4)
 </details>
 
-<details>
-  <summary> (Expand - User Story 11 testing video) </summary>
-
 ### 11. As a site owner, I want the knowledge quiz to be versatile and easy to update.
 
 |Feature | Action | Expected Result | Actual Result |
 | --- | --- | --- | --- |
 | quiz_data.js script housing all the questions and answers for the quiz | Open project repository. Locate quiz_data.js in assets/js/. Open quiz_data.js and replace questions and answers. The quiz data is displayed dynamically thus making it easy for variable number of answers to be displayed for one question and not being hard coded in HTML to a specific number. | View new questions being displayed in the quiz. | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 11 testing video) </summary>
 
   https://user-images.githubusercontent.com/79543676/140588644-1648d384-a124-4d29-a357-085bc7a9844f.mp4
 
