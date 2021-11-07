@@ -553,6 +553,20 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_7_test.mp4)
 </details>
 
+### 8. As a regular user, I want the option to change the current webapp color theme.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Theme Switch in the Navbar | Click the theme switch in the Navbar | Page color scheme to change | Works as expected |
+
+<details>
+  <summary> (Expand - User Story 8 testing video) </summary>
+
+  https://user-images.githubusercontent.com/79543676/140588507-401f9bdd-999f-4bcf-8af4-13aa38fea442.mp4
+
+  [Local Link](docs/test_user_stories/user_story_8_test.mp4)
+</details>
+
 
 
 <details>
