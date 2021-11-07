@@ -454,6 +454,13 @@ Application performs as intended on all devices.
 _GitHub does not allow videos hosted in the local repository to be played on the repository page.
 Although when viewing on GitHub these videos appear fine, they might not be available in this format if this project is forked. Please refer to the Local Links if needed._
 
+
+### 1. As a new user, I want to see recent data on major crypto-currencies by market capitalization.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Coin Badges on Landing Page | Load Landing Page. Hover over individual badges. | View current price for each currency. View 24 hour price highs and lows. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 1 testing video) </summary>
 
