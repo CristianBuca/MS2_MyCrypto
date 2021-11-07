@@ -511,6 +511,12 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_4_test.mp4)
 </details>
 
+### 5. As a new user, I want to learn new information relating to the blockchain.
+
+|Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+| Quiz Page | Click the Quiz Link on the navigation bar. Click the start button on the quiz. Play the game. | Find information related to the blockchain. | Works as expected |
+
 <details>
   <summary> (Expand - User Story 5 testing video) </summary>
  
@@ -519,29 +525,6 @@ Although when viewing on GitHub these videos appear fine, they might not be avai
   [Local Link](docs/test_user_stories/user_story_5_test.mp4)
 </details>
 
-<details>
-  <summary> (Expand - User Story 6 testing video) </summary>
-
-  https://user-images.githubusercontent.com/79543676/140588369-5b27cec6-1fd5-4d6e-a3d4-1142d739b90c.mp4
-
-  [Local Link](docs/test_user_stories/user_story_6_test.mp4)
-</details>
-
-<details>
-  <summary> (Expand - User Story 7 testing video) </summary>
-
-  https://user-images.githubusercontent.com/79543676/140588411-7e35764d-4540-418d-bdbb-b4aca894e4d0.mp4
-
-  [Local Link](docs/test_user_stories/user_story_7_test.mp4)
-</details>
-
-<details>
-  <summary> (Expand - User Story 8 testing video) </summary>
-
-  https://user-images.githubusercontent.com/79543676/140588507-401f9bdd-999f-4bcf-8af4-13aa38fea442.mp4
-
-  [Local Link](docs/test_user_stories/user_story_8_test.mp4)
-</details>
 
 <details>
   <summary> (Expand - User Story 9 testing video) </summary>
