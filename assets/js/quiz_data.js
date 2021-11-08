@@ -1,7 +1,6 @@
 /* jshint esversion: 8 */
 
-// Each question object is structured with keys for: question text, array with answer choices, 
-// correct choice and extra validation message for correct choice.
+// Each question object is structured with keys for: question text, array with answer choices, correct choice and extra validation message for correct choice.
 
 const questions = [
   {
