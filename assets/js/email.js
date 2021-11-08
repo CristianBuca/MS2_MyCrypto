@@ -28,21 +28,21 @@ function validateEmail(email) {
 function sendMail() {
   emailjs.init("user_iyGKuAhxS6sgm3Z6ZvXd0");
   emailjs.send("service_03dgxm2", "mycrypto", {
-      "from_name": $('#userName').val(),
-      "from_email": $('#email').val(),
-      "message": $('#message').val(),
+    "from_name": $('#userName').val(),
+    "from_email": $('#email').val(),
+    "message": $('#message').val(),
   })
   .then(
-      function(response) {
-          alert('Message Sent');
-					$('#invalidEntry').removeClass('show');
-					$('#contact-modal').modal('hide');
-          console.log('Message Sent', response);
-      },
-      function(error) {
-          alert('Unable to Send Message :( Please try again later.')
-          console.log('Failed', error);
-      }
+    function(response) {
+      alert('Message Sent');
+			$('#invalidEntry').removeClass('show');
+			$('#contact-modal').modal('hide');
+      console.log('Message Sent', response);
+    },
+    function(error) {
+      alert('Unable to Send Message :( Please try again later.')
+      console.log('Failed', error);
+    }
   );
 }
 
